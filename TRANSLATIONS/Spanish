@@ -1,0 +1,64 @@
+﻿_Credits
+Traducido por Boriar
+_Convert
+Convertir
+_Open
+Abrir
+_Browse
+Buscar
+_Output
+Salida:
+_Selected
+Seleccionado
+_Default
+Por defecto
+_General
+General
+_SelectedInfo
+Esta pestaña contiene la Configuración para los objetos seleccionados.
+_DefaultInfo
+Esta pestaña contiene la Configuración para cada objeto nuevo añadido.
+_GeneralInfo
+Esta pestaña contiene la Configuración general relacionada con la conversión.
+_VideoPrefix
+Prefijo de Vídeo
+_VideoNumber
+Número de Inicio
+_LongVideo
+Use 2 Dígitos para vídeos largos
+_VideoQuality
+Calidad de Vídeo
+_QualityText
+Bueno↔Pequeño
+_3DVideo
+Vídeo-3D
+_Threads
+Procesos a usar:
+_Core
+Núcleo
+_Cores
+Núcleos
+_Volume
+Volumen:
+_Preview
+Previo
+_SideBySide
+Lado-a-Lado (SBS)
+_Fonts
+Instalar Fuentes
+_Subtitle
+Número de Subtítulos:
+_NoConverting
+Vídeo no Convertido
+_Converting
+Vídeo en conversión
+_AllConverted
+Todos los vídeos convertidos
+_Warning
+Advertencia
+_WarningMessage
+¡Algunos vídeos no se han Convertido todavía! ¿Realmente desea salir?
+_Yes
+Sí
+_No
+No

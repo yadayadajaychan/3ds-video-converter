@@ -1,0 +1,66 @@
+﻿_Credits
+Translated by NekuSoul
+_Convert
+Convert
+_Open
+Open
+_Browse
+Browse
+_Output
+Output:
+_Selected
+Selected
+_Default
+Default
+_General
+General
+_SelectedInfo
+This Page contains Settings for the currently selected Items.
+_DefaultInfo
+This Page contains Settings for every new Item that gets added.
+_GeneralInfo
+This Tab contains general settings regarding the conversion progress
+_VideoPrefix
+Video Prefix
+_VideoNumber
+Starting Number
+_LongVideo
+Use 2 Digits for long video
+_VideoQuality
+Video Quality
+_QualityText
+Good↔Small
+_3DVideo
+3D-Video
+_Threads
+Threads to use:
+_Core
+Core
+_Cores
+Cores
+_Volume
+Volume:
+_Preview
+Preview
+_SideBySide
+Side-by-Side
+_Fonts
+Install Fonts
+_Stretch
+Stretch Videos
+_Subtitle
+Subtitle Number:
+_NoConverting
+No Videos Converted
+_Converting
+Currently Converting Video
+_AllConverted
+All Videos converted
+_Warning
+Warning
+_WarningMessage
+Some Videos have not been Converted yet! Do you really want to exit?
+_Yes
+Yes
+_No
+No

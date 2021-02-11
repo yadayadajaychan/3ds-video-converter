@@ -1,0 +1,66 @@
+_Credits
+Traduction Française par Asia81
+_Convert
+Convertir
+_Open
+Ouvrir
+_Browse
+Chercher
+_Output
+Sortie :
+_Selected
+Selectionné
+_Default
+Défaut
+_General
+Général
+_SelectedInfo
+Cette onglet contient des paramètres pour les éléments sélectionnés.
+_DefaultInfo
+Cette onglet contient des paramètres pour chaques éléments ajoutés.
+_GeneralInfo
+Cette onglet contient des paramètres à propos de la conversion.
+_VideoPrefix
+Préfix Vidéo
+_VideoNumber
+Numéro de début
+_LongVideo
+Utiliser 2 chiffres pour une longue vidéo
+_VideoQuality
+Qualité de la vidéo
+_QualityText
+Bon Petit
+_3DVideo
+Vidéo 3D
+_Threads
+Coeurs à utiliser
+_Core
+Noyau
+_Cores
+Noyaux
+_Volume
+Volume :
+_Preview
+Prévisualisation
+_SideBySide
+Side by Side
+_Fonts
+Installer Police
+_Stretch
+Vidéo Extensible
+_Subtitle
+Numéro Sous-Titre :
+_NoConverting
+Pas de vidéo converties
+_Converting
+Currently Converting Video
+_AllConverted
+Toutes les vidéos converties
+_Warning
+Attention
+_WarningMessage
+Des vidéos n'ont pas été converties ! Voulez-vous quitter ?
+_Yes
+Oui
+_No
+Non

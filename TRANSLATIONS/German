@@ -1,0 +1,66 @@
+﻿_Credits
+Translated by NekuSoul
+_Convert
+Konvertieren
+_Open
+Öffne
+_Browse
+Durchsuchen
+_Output
+Ausgabe:
+_Selected
+Gewählt
+_Default
+Standart
+_General
+Allgemein
+_SelectedInfo
+Diese Seite enthält Einstellungen für das gewählte Video.
+_DefaultInfo
+Diese Seite enthält Einstellungen für alle neuen Videos.
+_GeneralInfo
+Diese Seite enthält allgemeine Einstellungen.
+_VideoPrefix
+Videopräfix
+_VideoNumber
+Startnummer
+_LongVideo
+Nutze 2 Ziffern für langes Video
+_VideoQuality
+Videoqualität
+_QualityText
+Gut↔Klein
+_3DVideo
+3D-Video
+_Threads
+Anzahl an Threads:
+_Core
+Kern
+_Cores
+Kerne
+_Volume
+Lautstärke
+_Preview
+Voschau
+_SideBySide
+Horizontales 3D
+_Fonts
+Schriftarten installieren
+_Stretch
+Videos strecken
+_Subtitle
+Untertitel-Spur:
+_NoConverting
+Keine Videos konvertiert
+_Converting
+Konvertiere Video
+_AllConverted
+Alle Videos konvertiert
+_Warning
+Achtung
+_WarningMessage
+Einige Videos wurden noch nicht konvertiert! Wirklich schließen?
+_Yes
+Ja
+_No
+Nein

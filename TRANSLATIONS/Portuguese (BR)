@@ -1,0 +1,64 @@
+﻿_Credits
+Traduzido Por Flavio Suaréz
+_Convert
+Converter
+_Open
+Abrir
+_Browse
+Procurar
+_Output
+Arquivo de Saída:
+_Selected
+Selecionado
+_Default
+Padrão
+_General
+Geral
+_SelectedInfo
+Esta página contém configurações para os atuais items selecionados.
+_DefaultInfo
+Esta página contém configurações para cada novo item adicionado.
+_GeneralInfo
+Esta Aba contém as configurações gerais em relação ao processo de conversão.
+_VideoPrefix
+Prefixo do video
+_VideoNumber
+Numéro inicial
+_LongVideo
+Usar 2 dígitos para videos longos.
+_VideoQuality
+Qualidade do video
+_QualityText
+Alta↔Baixa
+_3DVideo
+Video-3D
+_Threads
+Processos a usar:
+_Core
+Núcleo
+_Cores
+Núcleos
+_Volume
+Volume:
+_Preview
+Prévia
+_SideBySide
+Lado-a-Lado
+_Fonts
+Instalar Fontes
+_Subtitle
+Número do Subtítulo:
+_NoConverting
+Nenhum video convertido
+_Converting
+Convertendo video(s)
+_AllConverted
+Todos os Videos foram convertidos.
+_Warning
+Aviso
+_WarningMessage
+Alguns videos ainda não foram convertidos! Você realmente deseja sair?
+_Yes
+Sim
+_No
+Não

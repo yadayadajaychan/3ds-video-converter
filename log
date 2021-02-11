@@ -1,0 +1,1149 @@
+
+ffprobe version N-44459-g8bdba0b Copyright (c) 2007-2012 the FFmpeg developers
+  built on Sep 14 2012 18:35:56 with gcc 4.7.1 (GCC)
+  configuration: --enable-gpl --enable-version3 --disable-pthreads --enable-runtime-cpudetect --enable-avisynth --enable-bzlib --enable-frei0r --enable-libass --enable-libcelt --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libfreetype --enable-libgsm --enable-libmp3lame --enable-libnut --enable-libopenjpeg --enable-librtmp --enable-libschroedinger --enable-libspeex --enable-libtheora --enable-libutvideo --enable-libvo-aacenc --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libxavs --enable-libxvid --enable-zlib
+  libavutil      51. 73.100 / 51. 73.100
+  libavcodec     54. 55.100 / 54. 55.100
+  libavformat    54. 27.100 / 54. 27.100
+  libavdevice    54.  2.100 / 54.  2.100
+  libavfilter     3. 16.103 /  3. 16.103
+  libswscale      2.  1.101 /  2.  1.101
+  libswresample   0. 15.100 /  0. 15.100
+  libpostproc    52.  0.100 / 52.  0.100
+Input #0, matroska,webm, from 'C:\Users\ethan\Desktop\Suzumiya Haruhi no Yuuutsu (2009) [Doki][1920x1080 h264 BD FLAC]\[Doki] Suzumiya Haruhi no Yuuutsu (2009) - 25 (1920x1080 h264 BD FLAC) [883A660F].mkv':
+  Metadata:
+    title           : [Doki] Suzumiya Haruhi no Yuuutsu (2009) - 25 - The Adventures of Asahina Mikuru Episode 00 (1920x1080 h264 BD FLAC).mkv
+    creation_time   : 2011-07-08 13:26:31
+  Duration: 00:24:18.00, start: 0.000000, bitrate: 9207 kb/s
+    Chapter #0.0: start 123.998000, end 764.555000
+    Metadata:
+      title           : OP
+    Chapter #0.1: start 764.555000, end 1391.014000
+    Metadata:
+      title           : Part B
+    Chapter #0.2: start 1391.014000, end 1458.000000
+    Metadata:
+      title           : ED
+    Stream #0:0(jpn): Audio: flac, 48000 Hz, stereo, s16 (default)
+    Metadata:
+      title           : FLAC (2 Ch)
+    Stream #0:1(jpn): Video: h264 (High), yuv420p, 1920x1080, SAR 1:1 DAR 16:9, 23.98 fps, 23.98 tbr, 1k tbn, 47.95 tbc
+    Metadata:
+      title           : AVC (1080p)
+    Stream #0:2(eng): Subtitle: ssa (default)
+    Metadata:
+      title           : ASS [Edited a.f.k]
+Codec 0x18000 is not in the full list.
+    Stream #0:3: Attachment: unknown_codec
+    Metadata:
+      filename        : AVGARDNEclipse.ttf
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:4: Attachment: unknown_codec
+    Metadata:
+      filename        : comic.ttf
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:5: Attachment: unknown_codec
+    Metadata:
+      filename        : FRABK.TTF
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:6: Attachment: unknown_codec
+    Metadata:
+      filename        : HANDWRITTEN_CRYSTAL_V2.TTF
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:7: Attachment: unknown_codec
+    Metadata:
+      filename        : kaiu.ttf
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:8: Attachment: unknown_codec
+    Metadata:
+      filename        : MTCORSVA.TTF
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:9: Attachment: unknown_codec
+    Metadata:
+      filename        : segoepr.ttf
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:10: Attachment: unknown_codec
+    Metadata:
+      filename        : times.ttf
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:11: Attachment: unknown_codec
+    Metadata:
+      filename        : Vesta-Bold.otf
+      mimetype        : application/x-truetype-font
+Unsupported codec with id 98304 for input stream 3
+Unsupported codec with id 98304 for input stream 4
+Unsupported codec with id 98304 for input stream 5
+Unsupported codec with id 98304 for input stream 6
+Unsupported codec with id 98304 for input stream 7
+Unsupported codec with id 98304 for input stream 8
+Unsupported codec with id 98304 for input stream 9
+Unsupported codec with id 98304 for input stream 10
+ -y -threads 8 -i "C:\Users\ethan\Desktop\Suzumiya Haruhi no Yuuutsu (2009) [Doki][1920x1080 h264 BD FLAC]\[Doki] Suzumiya Haruhi no Yuuutsu (2009) - 25 (1920x1080 h264 BD FLAC) [883A660F].mkv" -vol 256 -r 24 -vsync 1 -vcodec mjpeg -q 5 -acodec adpcm_ima_wav -async 1 -ac 2 -vf scale=min(400\,240*a):-1,pad=400:240:abs(ow-iw)/2:abs(oh-ih)/2,ass=subs.ass CURRENT.AVI
+
+ffmpeg version N-44459-g8bdba0b Copyright (c) 2000-2012 the FFmpeg developers
+  built on Sep 14 2012 18:39:46 with gcc 4.7.1 (GCC)
+  configuration: --enable-gpl --enable-version3 --disable-pthreads --enable-runtime-cpudetect --enable-avisynth --enable-bzlib --enable-frei0r --enable-libass --enable-libcelt --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libfreetype --enable-libgsm --enable-libmp3lame --enable-libnut --enable-libopenjpeg --enable-librtmp --enable-libschroedinger --enable-libspeex --enable-libtheora --enable-libutvideo --enable-libvo-aacenc --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libxavs --enable-libxvid --enable-zlib
+  libavutil      51. 73.100 / 51. 73.100
+  libavcodec     54. 55.100 / 54. 55.100
+  libavformat    54. 27.100 / 54. 27.100
+  libavdevice    54.  2.100 / 54.  2.100
+  libavfilter     3. 16.103 /  3. 16.103
+  libswscale      2.  1.101 /  2.  1.101
+  libswresample   0. 15.100 /  0. 15.100
+  libpostproc    52.  0.100 / 52.  0.100
+Input #0, matroska,webm, from 'C:\Users\ethan\Desktop\Suzumiya Haruhi no Yuuutsu (2009) [Doki][1920x1080 h264 BD FLAC]\[Doki] Suzumiya Haruhi no Yuuutsu (2009) - 25 (1920x1080 h264 BD FLAC) [883A660F].mkv':
+  Metadata:
+    title           : [Doki] Suzumiya Haruhi no Yuuutsu (2009) - 25 - The Adventures of Asahina Mikuru Episode 00 (1920x1080 h264 BD FLAC).mkv
+    creation_time   : 2011-07-08 13:26:31
+  Duration: 00:24:18.00, start: 0.000000, bitrate: 9207 kb/s
+    Chapter #0.0: start 123.998000, end 764.555000
+    Metadata:
+      title           : OP
+    Chapter #0.1: start 764.555000, end 1391.014000
+    Metadata:
+      title           : Part B
+    Chapter #0.2: start 1391.014000, end 1458.000000
+    Metadata:
+      title           : ED
+    Stream #0:0(jpn): Audio: flac, 48000 Hz, stereo, s16 (default)
+    Metadata:
+      title           : FLAC (2 Ch)
+    Stream #0:1(jpn): Video: h264 (High), yuv420p, 1920x1080, SAR 1:1 DAR 16:9, 23.98 fps, 23.98 tbr, 1k tbn, 47.95 tbc
+    Metadata:
+      title           : AVC (1080p)
+    Stream #0:2(eng): Subtitle: ssa (default)
+    Metadata:
+      title           : ASS [Edited a.f.k]
+Codec 0x18000 is not in the full list.
+    Stream #0:3: Attachment: unknown_codec
+    Metadata:
+      filename        : AVGARDNEclipse.ttf
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:4: Attachment: unknown_codec
+    Metadata:
+      filename        : comic.ttf
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:5: Attachment: unknown_codec
+    Metadata:
+      filename        : FRABK.TTF
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:6: Attachment: unknown_codec
+    Metadata:
+      filename        : HANDWRITTEN_CRYSTAL_V2.TTF
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:7: Attachment: unknown_codec
+    Metadata:
+      filename        : kaiu.ttf
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:8: Attachment: unknown_codec
+    Metadata:
+      filename        : MTCORSVA.TTF
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:9: Attachment: unknown_codec
+    Metadata:
+      filename        : segoepr.ttf
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:10: Attachment: unknown_codec
+    Metadata:
+      filename        : times.ttf
+      mimetype        : application/x-truetype-font
+Codec 0x18000 is not in the full list.
+    Stream #0:11: Attachment: unknown_codec
+    Metadata:
+      filename        : Vesta-Bold.otf
+      mimetype        : application/x-truetype-font
+[Parsed_ass_2 @ 0000000005887c40] Added subtitle file: 'subs.ass' (12 styles, 581 events)
+-async is forwarded to lavfi similarly to -af aresample=min_comp=0.001:min_hard_comp=0.100000.
+Output #0, avi, to 'CURRENT.AVI':
+  Metadata:
+    INAM            : [Doki] Suzumiya Haruhi no Yuuutsu (2009) - 25 - The Adventures of Asahina Mikuru Episode 00 (1920x1080 h264 BD FLAC).mkv
+    ISFT            : Lavf54.27.100
+    Chapter #0.0: start 123.998000, end 764.555000
+    Metadata:
+      title           : OP
+    Chapter #0.1: start 764.555000, end 1391.014000
+    Metadata:
+      title           : Part B
+    Chapter #0.2: start 1391.014000, end 1458.000000
+    Metadata:
+      title           : ED
+    Stream #0:0(jpn): Video: mjpeg (MJPG / 0x47504A4D), yuvj420p, 400x240 [SAR 1:1 DAR 5:3], q=2-31, 200 kb/s, 24 tbn, 24 tbc
+    Metadata:
+      title           : AVC (1080p)
+    Stream #0:1(jpn): Audio: adpcm_ima_wav ([17][0][0][0] / 0x0011), 48000 Hz, stereo, s16, 384 kb/s (default)
+    Metadata:
+      title           : FLAC (2 Ch)
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 -> mjpeg)
+  Stream #0:0 -> #0:1 (flac -> adpcm_ima_wav)
+Press [q] to stop, [?] for help
+[Parsed_ass_2 @ 0000000005887c40] fontconfig: Selected font is not the requested one: 'Tahoma Negreta' != 'DFKai-SB'
+[Parsed_ass_2 @ 0000000005887c40] Glyph 0x30DF not found, selecting one more font for (DFKai-SB, 200, 0)
+[Parsed_ass_2 @ 0000000005887c40] fontconfig: Selected font is not the requested one: 'Malgun Gothic Bold' != 'DFKai-SB'
+[Parsed_ass_2 @ 0000000005887c40] Glyph 0x30FB not found, selecting one more font for (DFKai-SB, 200, 0)
+[Parsed_ass_2 @ 0000000005887c40] fontconfig: Selected font is not the requested one: 'Meiryo UI Negreta' != 'DFKai-SB'
+frame=   92 fps=0.0 q=0.0 size=    1165kB time=00:00:04.25 bitrate=2241.6kbits/s    
+frame=  196 fps=195 q=0.0 size=    3415kB time=00:00:09.02 bitrate=3099.4kbits/s    
+frame=  312 fps=207 q=0.0 size=    5491kB time=00:00:13.47 bitrate=3338.1kbits/s    
+frame=  415 fps=207 q=0.0 size=    7329kB time=00:00:18.15 bitrate=3306.6kbits/s    
+frame=  528 fps=210 q=0.0 size=    9030kB time=00:00:22.94 bitrate=3223.7kbits/s dup=1 drop=0    
+frame=  635 fps=211 q=0.0 size=   11006kB time=00:00:26.95 bitrate=3345.4kbits/s dup=1 drop=0    
+frame=  734 fps=209 q=0.0 size=   13033kB time=00:00:31.56 bitrate=3381.8kbits/s dup=1 drop=0    
+frame=  841 fps=209 q=0.0 size=   15272kB time=00:00:35.65 bitrate=3508.6kbits/s dup=1 drop=0    
+frame=  945 fps=209 q=0.0 size=   17510kB time=00:00:39.74 bitrate=3608.9kbits/s dup=1 drop=0    
+frame= 1046 fps=208 q=0.0 size=   19337kB time=00:00:43.94 bitrate=3604.9kbits/s dup=1 drop=0    
+frame= 1142 fps=207 q=0.0 size=   21207kB time=00:00:47.94 bitrate=3623.3kbits/s dup=1 drop=0    
+frame= 1238 fps=205 q=0.0 size=   23124kB time=00:00:52.20 bitrate=3628.6kbits/s dup=1 drop=0    
+frame= 1303 fps=199 q=0.0 size=   24438kB time=00:00:55.27 bitrate=3621.7kbits/s dup=1 drop=0    
+frame= 1359 fps=193 q=0.0 size=   25535kB time=00:00:57.24 bitrate=3654.0kbits/s dup=1 drop=0    
+frame= 1463 fps=194 q=0.0 size=   27417kB time=00:01:01.50 bitrate=3651.6kbits/s dup=1 drop=0    
+frame= 1571 fps=195 q=0.0 size=   29404kB time=00:01:06.38 bitrate=3628.8kbits/s dup=2 drop=0    
+frame= 1675 fps=196 q=0.0 size=   31654kB time=00:01:10.55 bitrate=3675.3kbits/s dup=2 drop=0    
+frame= 1787 fps=197 q=0.0 size=   33553kB time=00:01:15.17 bitrate=3656.4kbits/s dup=2 drop=0    
+frame= 1895 fps=198 q=0.0 size=   35116kB time=00:01:19.68 bitrate=3610.0kbits/s dup=2 drop=0    
+frame= 2003 fps=199 q=0.0 size=   36839kB time=00:01:24.30 bitrate=3579.7kbits/s dup=2 drop=0    
+frame= 2109 fps=200 q=0.0 size=   38892kB time=00:01:28.39 bitrate=3604.3kbits/s dup=2 drop=0    
+frame= 2231 fps=202 q=0.0 size=   41145kB time=00:01:33.60 bitrate=3600.8kbits/s dup=2 drop=0    
+frame= 2348 fps=203 q=0.0 size=   43516kB time=00:01:38.62 bitrate=3614.4kbits/s dup=2 drop=0    
+fontconfig: Selected font is not the requested one: 'Tahoma Negreta' != 'AvantGarde Bk BT Eclipse'
+frame= 2474 fps=205 q=0.0 size=   45473kB time=00:01:44.09 bitrate=3578.6kbits/s dup=2 drop=0    
+frame= 2594 fps=206 q=0.0 size=   47897kB time=00:01:48.79 bitrate=3606.4kbits/s dup=3 drop=0    
+frame= 2698 fps=207 q=0.0 size=   49950kB time=00:01:53.14 bitrate=3616.6kbits/s dup=3 drop=0    
+frame= 2806 fps=207 q=0.0 size=   51960kB time=00:01:57.31 bitrate=3628.3kbits/s dup=3 drop=0    
+frame= 2914 fps=207 q=0.0 size=   53964kB time=00:02:02.18 bitrate=3618.0kbits/s dup=3 drop=0    
+frame= 3025 fps=208 q=0.0 size=   55986kB time=00:02:06.95 bitrate=3612.6kbits/s dup=3 drop=0    
+frame= 3135 fps=208 q=0.0 size=   57978kB time=00:02:11.06 bitrate=3623.8kbits/s dup=3 drop=0    
+frame= 3242 fps=208 q=0.0 size=   59910kB time=00:02:15.57 bitrate=3619.9kbits/s dup=3 drop=0    
+frame= 3356 fps=209 q=0.0 size=   61978kB time=00:02:20.45 bitrate=3614.9kbits/s dup=3 drop=0    
+frame= 3465 fps=209 q=0.0 size=   64154kB time=00:02:24.88 bitrate=3627.5kbits/s dup=3 drop=0    
+frame= 3574 fps=209 q=0.0 size=   66392kB time=00:02:29.49 bitrate=3638.0kbits/s dup=4 drop=0    
+frame= 3688 fps=210 q=0.0 size=   68485kB time=00:02:34.01 bitrate=3642.7kbits/s dup=4 drop=0    
+frame= 3806 fps=210 q=0.0 size=   70339kB time=00:02:39.64 bitrate=3609.3kbits/s dup=4 drop=0    
+frame= 3925 fps=211 q=0.0 size=   72412kB time=00:02:44.16 bitrate=3613.5kbits/s dup=4 drop=0    
+frame= 4044 fps=212 q=0.0 size=   74563kB time=00:02:49.37 bitrate=3606.4kbits/s dup=4 drop=0    
+frame= 4155 fps=212 q=0.0 size=   76628kB time=00:02:53.73 bitrate=3613.1kbits/s dup=4 drop=0    
+frame= 4272 fps=213 q=0.0 size=   78787kB time=00:02:58.75 bitrate=3610.6kbits/s dup=4 drop=0    
+frame= 4387 fps=213 q=0.0 size=   80803kB time=00:03:03.29 bitrate=3611.4kbits/s dup=4 drop=0    
+frame= 4504 fps=213 q=0.0 size=   82570kB time=00:03:07.97 bitrate=3598.4kbits/s dup=5 drop=0    
+frame= 4618 fps=214 q=0.0 size=   84307kB time=00:03:13.01 bitrate=3578.1kbits/s dup=5 drop=0    
+frame= 4742 fps=214 q=0.0 size=   86163kB time=00:03:18.12 bitrate=3562.7kbits/s dup=5 drop=0    
+frame= 4858 fps=215 q=0.0 size=   87966kB time=00:03:23.08 bitrate=3548.4kbits/s dup=5 drop=0    
+frame= 4977 fps=215 q=0.0 size=   89763kB time=00:03:27.78 bitrate=3538.9kbits/s dup=5 drop=0    
+frame= 5077 fps=215 q=0.0 size=   91697kB time=00:03:32.12 bitrate=3541.2kbits/s dup=5 drop=0    
+frame= 5182 fps=215 q=0.0 size=   93642kB time=00:03:36.81 bitrate=3538.2kbits/s dup=5 drop=0    
+frame= 5280 fps=214 q=0.0 size=   95444kB time=00:03:40.92 bitrate=3539.2kbits/s dup=5 drop=0    
+frame= 5383 fps=214 q=0.0 size=   97434kB time=00:03:44.84 bitrate=3550.0kbits/s dup=5 drop=0    
+frame= 5487 fps=214 q=0.0 size=   99387kB time=00:03:49.26 bitrate=3551.2kbits/s dup=5 drop=0    
+frame= 5597 fps=214 q=0.0 size=  101143kB time=00:03:53.63 bitrate=3546.4kbits/s dup=6 drop=0    
+frame= 5715 fps=215 q=0.0 size=  102870kB time=00:03:58.93 bitrate=3527.0kbits/s dup=6 drop=0    
+frame= 5831 fps=215 q=0.0 size=  104565kB time=00:04:03.44 bitrate=3518.7kbits/s dup=6 drop=0    
+frame= 5943 fps=215 q=0.0 size=  106104kB time=00:04:08.06 bitrate=3504.0kbits/s dup=6 drop=0    
+frame= 6053 fps=215 q=0.0 size=  107572kB time=00:04:12.99 bitrate=3483.1kbits/s dup=6 drop=0    
+frame= 6164 fps=215 q=0.0 size=  109257kB time=00:04:17.36 bitrate=3477.7kbits/s dup=6 drop=0    
+frame= 6272 fps=215 q=0.0 size=  111354kB time=00:04:21.96 bitrate=3482.2kbits/s dup=6 drop=0    
+frame= 6389 fps=216 q=0.0 size=  113537kB time=00:04:26.75 bitrate=3486.8kbits/s dup=6 drop=0    
+frame= 6500 fps=216 q=0.0 size=  115550kB time=00:04:31.68 bitrate=3484.1kbits/s dup=7 drop=0    
+frame= 6605 fps=216 q=0.0 size=  117216kB time=00:04:35.69 bitrate=3483.0kbits/s dup=7 drop=0    
+frame= 6720 fps=216 q=0.0 size=  119703kB time=00:04:40.48 bitrate=3496.2kbits/s dup=7 drop=0    
+frame= 6819 fps=215 q=0.0 size=  122063kB time=00:04:44.73 bitrate=3511.8kbits/s dup=7 drop=0    
+frame= 6928 fps=215 q=0.0 size=  124566kB time=00:04:49.44 bitrate=3525.5kbits/s dup=7 drop=0    
+frame= 7041 fps=216 q=0.0 size=  127147kB time=00:04:54.29 bitrate=3539.3kbits/s dup=7 drop=0    
+frame= 7158 fps=216 q=0.0 size=  129298kB time=00:04:58.65 bitrate=3546.6kbits/s dup=7 drop=0    
+frame= 7259 fps=216 q=0.0 size=  131295kB time=00:05:03.17 bitrate=3547.7kbits/s dup=7 drop=0    
+frame= 7331 fps=215 q=0.0 size=  132859kB time=00:05:06.15 bitrate=3554.9kbits/s dup=7 drop=0    
+frame= 7381 fps=213 q=0.0 size=  133400kB time=00:05:08.55 bitrate=3541.7kbits/s dup=7 drop=0    
+frame= 7476 fps=213 q=0.0 size=  134547kB time=00:05:11.96 bitrate=3533.1kbits/s dup=7 drop=0    
+frame= 7559 fps=212 q=0.0 size=  135637kB time=00:05:15.37 bitrate=3523.2kbits/s dup=8 drop=0    
+frame= 7666 fps=212 q=0.0 size=  137369kB time=00:05:19.82 bitrate=3518.6kbits/s dup=8 drop=0    
+frame= 7764 fps=212 q=0.0 size=  138966kB time=00:05:23.91 bitrate=3514.5kbits/s dup=8 drop=0    
+frame= 7869 fps=212 q=0.0 size=  140526kB time=00:05:28.25 bitrate=3507.0kbits/s dup=8 drop=0    
+frame= 7972 fps=212 q=0.0 size=  141893kB time=00:05:32.62 bitrate=3494.6kbits/s dup=8 drop=0    
+frame= 8081 fps=212 q=0.0 size=  143254kB time=00:05:37.05 bitrate=3481.8kbits/s dup=8 drop=0    
+frame= 8195 fps=212 q=0.0 size=  144820kB time=00:05:42.00 bitrate=3468.8kbits/s dup=8 drop=0    
+frame= 8289 fps=212 q=0.0 size=  146104kB time=00:05:46.09 bitrate=3458.2kbits/s dup=8 drop=0    
+frame= 8403 fps=212 q=0.0 size=  147649kB time=00:05:50.63 bitrate=3449.6kbits/s dup=8 drop=0    
+frame= 8500 fps=211 q=0.0 size=  149023kB time=00:05:55.06 bitrate=3438.3kbits/s dup=8 drop=0    
+frame= 8567 fps=211 q=0.0 size=  150167kB time=00:05:57.79 bitrate=3438.2kbits/s dup=9 drop=0    
+frame= 8661 fps=210 q=0.0 size=  151780kB time=00:06:01.62 bitrate=3438.3kbits/s dup=9 drop=0    
+frame= 8739 fps=210 q=0.0 size=  153093kB time=00:06:04.86 bitrate=3437.2kbits/s dup=9 drop=0    
+frame= 8818 fps=209 q=0.0 size=  154337kB time=00:06:08.02 bitrate=3435.4kbits/s dup=9 drop=0    
+frame= 8896 fps=208 q=0.0 size=  155593kB time=00:06:11.26 bitrate=3433.1kbits/s dup=9 drop=0    
+frame= 8971 fps=208 q=0.0 size=  156842kB time=00:06:14.42 bitrate=3431.5kbits/s dup=9 drop=0    
+frame= 9049 fps=207 q=0.0 size=  158236kB time=00:06:17.75 bitrate=3431.5kbits/s dup=9 drop=0    
+frame= 9128 fps=206 q=0.0 size=  159718kB time=00:06:21.07 bitrate=3433.4kbits/s dup=9 drop=0    
+frame= 9205 fps=206 q=0.0 size=  161130kB time=00:06:24.34 bitrate=3434.4kbits/s dup=9 drop=0    
+frame= 9290 fps=205 q=0.0 size=  162602kB time=00:06:27.49 bitrate=3437.5kbits/s dup=9 drop=0    
+frame= 9366 fps=205 q=0.0 size=  163794kB time=00:06:30.90 bitrate=3432.5kbits/s dup=9 drop=0    
+frame= 9449 fps=204 q=0.0 size=  164795kB time=00:06:34.15 bitrate=3425.1kbits/s dup=9 drop=0    
+frame= 9520 fps=204 q=0.0 size=  165852kB time=00:06:37.39 bitrate=3418.9kbits/s dup=10 drop=0    
+frame= 9590 fps=203 q=0.0 size=  166920kB time=00:06:40.38 bitrate=3415.3kbits/s dup=10 drop=0    
+frame= 9667 fps=202 q=0.0 size=  168082kB time=00:06:43.28 bitrate=3414.3kbits/s dup=10 drop=0    
+frame= 9760 fps=202 q=0.0 size=  169148kB time=00:06:47.37 bitrate=3401.5kbits/s dup=10 drop=0    
+frame= 9846 fps=202 q=0.0 size=  170344kB time=00:06:51.12 bitrate=3394.3kbits/s dup=10 drop=0    
+frame= 9927 fps=202 q=0.0 size=  171591kB time=00:06:54.44 bitrate=3391.7kbits/s dup=10 drop=0    
+frame=10011 fps=201 q=0.0 size=  172909kB time=00:06:57.94 bitrate=3389.1kbits/s dup=10 drop=0    
+frame=10113 fps=201 q=0.0 size=  174166kB time=00:07:02.30 bitrate=3378.5kbits/s dup=10 drop=0    
+frame=10203 fps=201 q=0.0 size=  175528kB time=00:07:05.97 bitrate=3375.6kbits/s dup=10 drop=0    
+frame=10289 fps=201 q=0.0 size=  176604kB time=00:07:09.30 bitrate=3370.0kbits/s dup=10 drop=0    
+frame=10400 fps=201 q=0.0 size=  177671kB time=00:07:13.72 bitrate=3355.7kbits/s dup=10 drop=0    
+frame=10518 fps=201 q=0.0 size=  178834kB time=00:07:18.77 bitrate=3338.9kbits/s dup=11 drop=0    
+frame=10627 fps=201 q=0.0 size=  180051kB time=00:07:23.11 bitrate=3328.7kbits/s dup=11 drop=0    
+fontconfig: Selected font is not the requested one: 'Tahoma Negreta' != 'Handwritten Crystal v2'
+frame=10740 fps=202 q=0.0 size=  182308kB time=00:07:28.15 bitrate=3332.5kbits/s dup=11 drop=0    
+frame=10860 fps=202 q=0.0 size=  184862kB time=00:07:33.28 bitrate=3340.9kbits/s dup=11 drop=0    
+frame=10968 fps=202 q=0.0 size=  187246kB time=00:07:37.37 bitrate=3353.7kbits/s dup=11 drop=0    
+frame=11072 fps=202 q=0.0 size=  189573kB time=00:07:42.24 bitrate=3359.6kbits/s dup=11 drop=0    
+frame=11187 fps=202 q=0.0 size=  192043kB time=00:07:46.84 bitrate=3369.9kbits/s dup=11 drop=0    
+frame=11297 fps=203 q=0.0 size=  194385kB time=00:07:51.12 bitrate=3380.0kbits/s dup=11 drop=0    
+frame=11404 fps=203 q=0.0 size=  196615kB time=00:07:55.63 bitrate=3386.3kbits/s dup=11 drop=0    
+frame=11515 fps=203 q=0.0 size=  198675kB time=00:08:00.51 bitrate=3387.1kbits/s dup=12 drop=0    
+frame=11617 fps=203 q=0.0 size=  200099kB time=00:08:04.93 bitrate=3380.2kbits/s dup=12 drop=0    
+frame=11718 fps=203 q=0.0 size=  201895kB time=00:08:08.68 bitrate=3384.4kbits/s dup=12 drop=0    
+frame=11822 fps=203 q=0.0 size=  203601kB time=00:08:12.96 bitrate=3383.4kbits/s dup=12 drop=0    
+frame=11925 fps=203 q=0.0 size=  205232kB time=00:08:17.31 bitrate=3380.7kbits/s dup=12 drop=0    
+frame=12028 fps=203 q=0.0 size=  206099kB time=00:08:21.57 bitrate=3366.1kbits/s dup=12 drop=0    
+frame=12125 fps=203 q=0.0 size=  207401kB time=00:08:26.10 bitrate=3357.1kbits/s dup=12 drop=0    
+frame=12208 fps=202 q=0.0 size=  208656kB time=00:08:29.51 bitrate=3354.8kbits/s dup=12 drop=0    
+frame=12290 fps=202 q=0.0 size=  209849kB time=00:08:32.75 bitrate=3352.6kbits/s dup=12 drop=0    
+frame=12384 fps=202 q=0.0 size=  211254kB time=00:08:36.50 bitrate=3350.6kbits/s dup=12 drop=0    
+frame=12488 fps=202 q=0.0 size=  212821kB time=00:08:41.21 bitrate=3344.9kbits/s dup=12 drop=0    
+frame=12580 fps=202 q=0.0 size=  214170kB time=00:08:44.62 bitrate=3344.3kbits/s dup=13 drop=0    
+frame=12682 fps=202 q=0.0 size=  215740kB time=00:08:49.39 bitrate=3338.4kbits/s dup=13 drop=0    
+frame=12774 fps=202 q=0.0 size=  217149kB time=00:08:53.24 bitrate=3335.9kbits/s dup=13 drop=0    
+frame=12866 fps=202 q=0.0 size=  218628kB time=00:08:56.57 bitrate=3337.9kbits/s dup=13 drop=0    
+frame=12975 fps=202 q=0.0 size=  220438kB time=00:09:01.34 bitrate=3335.9kbits/s dup=13 drop=0    
+frame=13081 fps=202 q=0.0 size=  222111kB time=00:09:05.95 bitrate=3332.7kbits/s dup=13 drop=0    
+frame=13189 fps=202 q=0.0 size=  223462kB time=00:09:10.30 bitrate=3326.5kbits/s dup=13 drop=0    
+frame=13287 fps=202 q=0.0 size=  224983kB time=00:09:14.05 bitrate=3326.5kbits/s dup=13 drop=0    
+frame=13388 fps=202 q=0.0 size=  226682kB time=00:09:18.41 bitrate=3325.4kbits/s dup=13 drop=0    
+frame=13473 fps=202 q=0.0 size=  228234kB time=00:09:22.25 bitrate=3325.4kbits/s dup=13 drop=0    
+frame=13585 fps=202 q=0.0 size=  230354kB time=00:09:26.42 bitrate=3331.5kbits/s dup=14 drop=0    
+frame=13695 fps=202 q=0.0 size=  232455kB time=00:09:31.46 bitrate=3332.2kbits/s dup=14 drop=0    
+frame=13804 fps=202 q=0.0 size=  234525kB time=00:09:35.72 bitrate=3337.0kbits/s dup=14 drop=0    
+frame=13918 fps=202 q=0.0 size=  236479kB time=00:09:40.68 bitrate=3336.1kbits/s dup=14 drop=0    
+frame=14030 fps=202 q=0.0 size=  238471kB time=00:09:45.36 bitrate=3337.3kbits/s dup=14 drop=0    
+frame=14137 fps=202 q=0.0 size=  240455kB time=00:09:49.81 bitrate=3339.7kbits/s dup=14 drop=0    
+frame=14248 fps=203 q=0.0 size=  242423kB time=00:09:54.41 bitrate=3341.0kbits/s dup=14 drop=0    
+frame=14361 fps=203 q=0.0 size=  244336kB time=00:09:59.37 bitrate=3339.5kbits/s dup=14 drop=0    
+frame=14466 fps=203 q=0.0 size=  246153kB time=00:10:03.88 bitrate=3339.2kbits/s dup=14 drop=0    
+frame=14578 fps=203 q=0.0 size=  247389kB time=00:10:08.25 bitrate=3331.9kbits/s dup=15 drop=0    
+frame=14698 fps=203 q=0.0 size=  249454kB time=00:10:13.35 bitrate=3331.7kbits/s dup=15 drop=0    
+frame=14794 fps=203 q=0.0 size=  251101kB time=00:10:17.38 bitrate=3331.8kbits/s dup=15 drop=0    
+frame=14901 fps=203 q=0.0 size=  253001kB time=00:10:21.55 bitrate=3334.5kbits/s dup=15 drop=0    
+frame=14993 fps=203 q=0.0 size=  254596kB time=00:10:25.13 bitrate=3336.3kbits/s dup=15 drop=0    
+frame=15099 fps=203 q=0.0 size=  256310kB time=00:10:29.75 bitrate=3334.1kbits/s dup=15 drop=0    
+frame=15204 fps=203 q=0.0 size=  258151kB time=00:10:33.93 bitrate=3336.0kbits/s dup=15 drop=0    
+frame=15297 fps=203 q=0.0 size=  259729kB time=00:10:38.18 bitrate=3334.0kbits/s dup=15 drop=0    
+frame=15389 fps=203 q=0.0 size=  261009kB time=00:10:41.70 bitrate=3332.0kbits/s dup=15 drop=0    
+frame=15481 fps=203 q=0.0 size=  262162kB time=00:10:45.79 bitrate=3325.6kbits/s dup=15 drop=0    
+frame=15580 fps=203 q=0.0 size=  263570kB time=00:10:49.96 bitrate=3322.0kbits/s dup=16 drop=0    
+frame=15687 fps=203 q=0.0 size=  265616kB time=00:10:54.41 bitrate=3325.0kbits/s dup=16 drop=0    
+frame=15795 fps=203 q=0.0 size=  267589kB time=00:10:58.59 bitrate=3328.4kbits/s dup=16 drop=0    
+frame=15903 fps=203 q=0.0 size=  269490kB time=00:11:02.93 bitrate=3330.1kbits/s dup=16 drop=0    
+frame=16016 fps=203 q=0.0 size=  271691kB time=00:11:07.97 bitrate=3332.0kbits/s dup=16 drop=0    
+frame=16116 fps=203 q=0.0 size=  273465kB time=00:11:12.32 bitrate=3332.1kbits/s dup=16 drop=0    
+frame=16217 fps=203 q=0.0 size=  275249kB time=00:11:16.26 bitrate=3334.3kbits/s dup=16 drop=0    
+frame=16332 fps=203 q=0.0 size=  277279kB time=00:11:21.45 bitrate=3333.3kbits/s dup=16 drop=0    
+frame=16442 fps=203 q=0.0 size=  279032kB time=00:11:25.56 bitrate=3334.2kbits/s dup=16 drop=0    
+frame=16551 fps=203 q=0.0 size=  280528kB time=00:11:30.07 bitrate=3330.2kbits/s dup=17 drop=0    
+frame=16663 fps=203 q=0.0 size=  282495kB time=00:11:34.86 bitrate=3330.4kbits/s dup=17 drop=0    
+frame=16773 fps=204 q=0.0 size=  284358kB time=00:11:39.46 bitrate=3330.4kbits/s dup=17 drop=0    
+frame=16882 fps=204 q=0.0 size=  286053kB time=00:11:44.08 bitrate=3328.2kbits/s dup=17 drop=0    
+frame=16998 fps=204 q=0.0 size=  287957kB time=00:11:48.59 bitrate=3329.0kbits/s dup=17 drop=0    
+frame=17109 fps=204 q=0.0 size=  289924kB time=00:11:53.55 bitrate=3328.5kbits/s dup=17 drop=0    
+frame=17219 fps=204 q=0.0 size=  291921kB time=00:11:57.89 bitrate=3331.1kbits/s dup=17 drop=0    
+frame=17323 fps=204 q=0.0 size=  293859kB time=00:12:02.26 bitrate=3333.0kbits/s dup=17 drop=0    
+frame=17425 fps=204 q=0.0 size=  295774kB time=00:12:07.02 bitrate=3332.7kbits/s dup=17 drop=0    
+frame=17526 fps=204 q=0.0 size=  297661kB time=00:12:10.69 bitrate=3337.2kbits/s dup=18 drop=0    
+frame=17632 fps=204 q=0.0 size=  299549kB time=00:12:15.22 bitrate=3337.6kbits/s dup=18 drop=0    
+frame=17731 fps=204 q=0.0 size=  300824kB time=00:12:19.23 bitrate=3333.7kbits/s dup=18 drop=0    
+frame=17836 fps=204 q=0.0 size=  302776kB time=00:12:23.49 bitrate=3336.1kbits/s dup=18 drop=0    
+frame=17934 fps=204 q=0.0 size=  304861kB time=00:12:27.85 bitrate=3339.4kbits/s dup=18 drop=0    
+frame=18025 fps=204 q=0.0 size=  306833kB time=00:12:31.69 bitrate=3343.9kbits/s dup=18 drop=0    
+frame=18113 fps=204 q=0.0 size=  308725kB time=00:12:35.18 bitrate=3348.9kbits/s dup=18 drop=0    
+frame=18230 fps=204 q=0.0 size=  309886kB time=00:12:40.56 bitrate=3337.7kbits/s dup=18 drop=0    
+frame=18341 fps=204 q=0.0 size=  311510kB time=00:12:44.57 bitrate=3337.7kbits/s dup=18 drop=0    
+frame=18447 fps=204 q=0.0 size=  312896kB time=00:12:49.61 bitrate=3330.6kbits/s dup=18 drop=0    
+frame=18554 fps=204 q=0.0 size=  314335kB time=00:12:53.53 bitrate=3328.9kbits/s dup=19 drop=0    
+frame=18656 fps=204 q=0.0 size=  315733kB time=00:12:57.79 bitrate=3325.4kbits/s dup=19 drop=0    
+frame=18759 fps=204 q=0.0 size=  317195kB time=00:13:02.41 bitrate=3321.1kbits/s dup=19 drop=0    
+frame=18860 fps=204 q=0.0 size=  318631kB time=00:13:06.58 bitrate=3318.4kbits/s dup=19 drop=0    
+frame=18958 fps=204 q=0.0 size=  319946kB time=00:13:10.35 bitrate=3316.2kbits/s dup=19 drop=0    
+frame=19063 fps=204 q=0.0 size=  321393kB time=00:13:14.87 bitrate=3312.3kbits/s dup=19 drop=0    
+frame=19164 fps=204 q=0.0 size=  323133kB time=00:13:19.29 bitrate=3311.8kbits/s dup=19 drop=0    
+frame=19282 fps=204 q=0.0 size=  325066kB time=00:13:24.17 bitrate=3311.4kbits/s dup=19 drop=0    
+frame=19391 fps=204 q=0.0 size=  326794kB time=00:13:28.95 bitrate=3309.3kbits/s dup=19 drop=0    
+frame=19485 fps=204 q=0.0 size=  328199kB time=00:13:32.28 bitrate=3309.9kbits/s dup=19 drop=0    
+frame=19599 fps=204 q=0.0 size=  329756kB time=00:13:37.30 bitrate=3305.2kbits/s dup=20 drop=0    
+frame=19720 fps=204 q=0.0 size=  331380kB time=00:13:42.09 bitrate=3302.1kbits/s dup=20 drop=0    
+frame=19832 fps=204 q=0.0 size=  333036kB time=00:13:47.20 bitrate=3298.1kbits/s dup=20 drop=0    
+frame=19940 fps=205 q=0.0 size=  334488kB time=00:13:51.56 bitrate=3295.1kbits/s dup=20 drop=0    
+frame=20048 fps=205 q=0.0 size=  335984kB time=00:13:55.82 bitrate=3293.0kbits/s dup=20 drop=0    
+frame=20159 fps=205 q=0.0 size=  337433kB time=00:14:00.35 bitrate=3289.4kbits/s dup=20 drop=0    
+frame=20263 fps=205 q=0.0 size=  338893kB time=00:14:04.78 bitrate=3286.3kbits/s dup=20 drop=0    
+frame=20369 fps=205 q=0.0 size=  340305kB time=00:14:09.57 bitrate=3281.4kbits/s dup=20 drop=0    
+frame=20479 fps=205 q=0.0 size=  341773kB time=00:14:13.83 bitrate=3279.1kbits/s dup=20 drop=0    
+frame=20582 fps=205 q=0.0 size=  343242kB time=00:14:18.09 bitrate=3276.8kbits/s dup=21 drop=0    
+frame=20691 fps=205 q=0.0 size=  344736kB time=00:14:22.62 bitrate=3273.8kbits/s dup=21 drop=0    
+frame=20798 fps=205 q=0.0 size=  346251kB time=00:14:27.22 bitrate=3270.8kbits/s dup=21 drop=0    
+frame=20902 fps=205 q=0.0 size=  347739kB time=00:14:31.33 bitrate=3269.3kbits/s dup=21 drop=0    
+frame=21009 fps=205 q=0.0 size=  349230kB time=00:14:36.18 bitrate=3265.2kbits/s dup=21 drop=0    
+frame=21117 fps=205 q=0.0 size=  350589kB time=00:14:40.29 bitrate=3262.6kbits/s dup=21 drop=0    
+frame=21221 fps=205 q=0.0 size=  352002kB time=00:14:45.06 bitrate=3258.1kbits/s dup=21 drop=0    
+frame=21323 fps=205 q=0.0 size=  353375kB time=00:14:48.90 bitrate=3256.7kbits/s dup=21 drop=0    
+frame=21430 fps=205 q=0.0 size=  354784kB time=00:14:53.51 bitrate=3252.7kbits/s dup=21 drop=0    
+frame=21537 fps=205 q=0.0 size=  356246kB time=00:14:57.94 bitrate=3250.0kbits/s dup=22 drop=0    
+frame=21631 fps=205 q=0.0 size=  357550kB time=00:15:02.31 bitrate=3246.2kbits/s dup=22 drop=0    
+frame=21745 fps=205 q=0.0 size=  359144kB time=00:15:06.82 bitrate=3244.4kbits/s dup=22 drop=0    
+frame=21841 fps=205 q=0.0 size=  360611kB time=00:15:11.08 bitrate=3242.4kbits/s dup=22 drop=0    
+frame=21946 fps=205 q=0.0 size=  362156kB time=00:15:14.93 bitrate=3242.6kbits/s dup=22 drop=0    
+frame=22056 fps=205 q=0.0 size=  363761kB time=00:15:19.62 bitrate=3240.4kbits/s dup=22 drop=0    
+frame=22164 fps=205 q=0.0 size=  365252kB time=00:15:24.24 bitrate=3237.4kbits/s dup=22 drop=0    
+frame=22277 fps=205 q=0.0 size=  367504kB time=00:15:29.00 bitrate=3240.7kbits/s dup=22 drop=0    
+frame=22387 fps=205 q=0.0 size=  370224kB time=00:15:33.62 bitrate=3248.5kbits/s dup=22 drop=0    
+frame=22494 fps=205 q=0.0 size=  372871kB time=00:15:37.97 bitrate=3256.6kbits/s dup=22 drop=0    
+frame=22604 fps=205 q=0.0 size=  375559kB time=00:15:42.84 bitrate=3263.1kbits/s dup=23 drop=0    
+frame=22710 fps=205 q=0.0 size=  378156kB time=00:15:46.67 bitrate=3272.3kbits/s dup=23 drop=0    
+frame=22814 fps=205 q=0.0 size=  380830kB time=00:15:50.93 bitrate=3280.7kbits/s dup=23 drop=0    
+frame=22920 fps=205 q=0.0 size=  383545kB time=00:15:55.55 bitrate=3288.1kbits/s dup=23 drop=0    
+frame=23028 fps=206 q=0.0 size=  386097kB time=00:16:00.49 bitrate=3293.0kbits/s dup=23 drop=0    
+frame=23144 fps=206 q=0.0 size=  388794kB time=00:16:05.28 bitrate=3299.6kbits/s dup=23 drop=0    
+frame=23252 fps=206 q=0.0 size=  391125kB time=00:16:09.54 bitrate=3304.8kbits/s dup=23 drop=0    
+frame=23362 fps=206 q=0.0 size=  393806kB time=00:16:13.90 bitrate=3312.5kbits/s dup=23 drop=0    
+frame=23476 fps=206 q=0.0 size=  396543kB time=00:16:19.01 bitrate=3318.1kbits/s dup=23 drop=0    
+frame=23588 fps=206 q=0.0 size=  398698kB time=00:16:23.62 bitrate=3320.5kbits/s dup=24 drop=0    
+frame=23704 fps=206 q=0.0 size=  400754kB time=00:16:28.05 bitrate=3322.7kbits/s dup=24 drop=0    
+frame=23815 fps=206 q=0.0 size=  402758kB time=00:16:33.01 bitrate=3322.6kbits/s dup=24 drop=0    
+frame=23923 fps=206 q=0.0 size=  404527kB time=00:16:37.52 bitrate=3322.1kbits/s dup=24 drop=0    
+frame=24028 fps=206 q=0.0 size=  406602kB time=00:16:41.80 bitrate=3324.9kbits/s dup=24 drop=0    
+frame=24144 fps=206 q=0.0 size=  408277kB time=00:16:46.91 bitrate=3321.6kbits/s dup=24 drop=0    
+frame=24245 fps=206 q=0.0 size=  409887kB time=00:16:50.94 bitrate=3321.5kbits/s dup=24 drop=0    
+frame=24346 fps=206 q=0.0 size=  411044kB time=00:16:55.28 bitrate=3316.6kbits/s dup=24 drop=0    
+frame=24453 fps=206 q=0.0 size=  412910kB time=00:16:59.28 bitrate=3318.6kbits/s dup=24 drop=0    
+frame=24562 fps=206 q=0.0 size=  414266kB time=00:17:03.73 bitrate=3315.0kbits/s dup=25 drop=0    
+frame=24666 fps=206 q=0.0 size=  415771kB time=00:17:08.50 bitrate=3311.6kbits/s dup=25 drop=0    
+frame=24774 fps=206 q=0.0 size=  417423kB time=00:17:13.12 bitrate=3309.9kbits/s dup=25 drop=0    
+frame=24886 fps=206 q=0.0 size=  419175kB time=00:17:17.63 bitrate=3309.3kbits/s dup=25 drop=0    
+frame=24993 fps=206 q=0.0 size=  420808kB time=00:17:21.83 bitrate=3308.8kbits/s dup=25 drop=0    
+frame=25104 fps=206 q=0.0 size=  422525kB time=00:17:26.93 bitrate=3306.1kbits/s dup=25 drop=0    
+frame=25206 fps=206 q=0.0 size=  424261kB time=00:17:30.70 bitrate=3307.8kbits/s dup=25 drop=0    
+frame=25306 fps=206 q=0.0 size=  426030kB time=00:17:34.79 bitrate=3308.7kbits/s dup=25 drop=0    
+frame=25414 fps=206 q=0.0 size=  427799kB time=00:17:39.90 bitrate=3306.5kbits/s dup=25 drop=0    
+frame=25523 fps=206 q=0.0 size=  429962kB time=00:17:44.18 bitrate=3309.8kbits/s dup=26 drop=0    
+frame=25635 fps=207 q=0.0 size=  432056kB time=00:17:48.69 bitrate=3311.9kbits/s dup=26 drop=0    
+frame=25747 fps=207 q=0.0 size=  433883kB time=00:17:53.31 bitrate=3311.6kbits/s dup=26 drop=0    
+frame=25859 fps=207 q=0.0 size=  436285kB time=00:17:58.25 bitrate=3314.7kbits/s dup=26 drop=0    
+frame=25969 fps=207 q=0.0 size=  438283kB time=00:18:02.78 bitrate=3315.9kbits/s dup=26 drop=0    
+frame=26095 fps=207 q=0.0 size=  440338kB time=00:18:07.91 bitrate=3315.7kbits/s dup=26 drop=0    
+frame=26213 fps=207 q=0.0 size=  442138kB time=00:18:13.02 bitrate=3313.7kbits/s dup=26 drop=0    
+frame=26325 fps=207 q=0.0 size=  443874kB time=00:18:17.30 bitrate=3313.8kbits/s dup=26 drop=0    
+frame=26428 fps=207 q=0.0 size=  445637kB time=00:18:22.06 bitrate=3312.5kbits/s dup=26 drop=0    
+frame=26533 fps=207 q=0.0 size=  447209kB time=00:18:25.98 bitrate=3312.5kbits/s dup=27 drop=0    
+frame=26648 fps=207 q=0.0 size=  449053kB time=00:18:31.19 bitrate=3310.5kbits/s dup=27 drop=0    
+frame=26760 fps=207 q=0.0 size=  450771kB time=00:18:35.45 bitrate=3310.5kbits/s dup=27 drop=0    
+frame=26872 fps=207 q=0.0 size=  452407kB time=00:18:40.07 bitrate=3308.8kbits/s dup=27 drop=0    
+frame=26980 fps=207 q=0.0 size=  454040kB time=00:18:44.75 bitrate=3306.9kbits/s dup=27 drop=0    
+frame=27087 fps=207 q=0.0 size=  455683kB time=00:18:49.46 bitrate=3305.1kbits/s dup=27 drop=0    
+frame=27194 fps=207 q=0.0 size=  457395kB time=00:18:53.72 bitrate=3305.0kbits/s dup=27 drop=0    
+frame=27303 fps=207 q=0.0 size=  459321kB time=00:18:58.34 bitrate=3305.5kbits/s dup=27 drop=0    
+frame=27409 fps=207 q=0.0 size=  461229kB time=00:19:02.85 bitrate=3306.1kbits/s dup=27 drop=0    
+frame=27516 fps=207 q=0.0 size=  463021kB time=00:19:07.13 bitrate=3306.6kbits/s dup=27 drop=0    
+frame=27623 fps=207 q=0.0 size=  464212kB time=00:19:11.64 bitrate=3302.1kbits/s dup=28 drop=0    
+frame=27735 fps=207 q=0.0 size=  465936kB time=00:19:16.35 bitrate=3300.9kbits/s dup=28 drop=0    
+frame=27850 fps=208 q=0.0 size=  467335kB time=00:19:20.86 bitrate=3297.9kbits/s dup=28 drop=0    
+frame=27963 fps=208 q=0.0 size=  468581kB time=00:19:25.90 bitrate=3292.4kbits/s dup=28 drop=0    
+frame=28065 fps=208 q=0.0 size=  470217kB time=00:19:29.82 bitrate=3292.8kbits/s dup=28 drop=0    
+frame=28168 fps=208 q=0.0 size=  472081kB time=00:19:34.33 bitrate=3293.2kbits/s dup=28 drop=0    
+frame=28275 fps=208 q=0.0 size=  473673kB time=00:19:38.78 bitrate=3291.8kbits/s dup=28 drop=0    
+frame=28394 fps=208 q=0.0 size=  475165kB time=00:19:43.80 bitrate=3288.2kbits/s dup=28 drop=0    
+frame=28511 fps=208 q=0.0 size=  476807kB time=00:19:48.93 bitrate=3285.3kbits/s dup=28 drop=0    
+frame=28633 fps=208 q=0.0 size=  478835kB time=00:19:53.38 bitrate=3287.0kbits/s dup=29 drop=0    
+frame=28745 fps=208 q=0.0 size=  480395kB time=00:19:58.06 bitrate=3284.8kbits/s dup=29 drop=0    
+frame=28873 fps=208 q=0.0 size=  482151kB time=00:20:03.78 bitrate=3281.1kbits/s dup=29 drop=0    
+frame=28996 fps=208 q=0.0 size=  484077kB time=00:20:08.55 bitrate=3281.2kbits/s dup=29 drop=0    
+frame=29120 fps=208 q=0.0 size=  485761kB time=00:20:14.10 bitrate=3277.6kbits/s dup=29 drop=0    
+frame=29233 fps=209 q=0.0 size=  487472kB time=00:20:18.72 bitrate=3276.7kbits/s dup=29 drop=0    
+frame=29336 fps=208 q=0.0 size=  488914kB time=00:20:22.98 bitrate=3274.9kbits/s dup=29 drop=0    
+frame=29456 fps=209 q=0.0 size=  490950kB time=00:20:28.19 bitrate=3274.6kbits/s dup=29 drop=0    
+frame=29574 fps=209 q=0.0 size=  492877kB time=00:20:33.04 bitrate=3274.5kbits/s dup=30 drop=0    
+frame=29697 fps=209 q=0.0 size=  494336kB time=00:20:38.09 bitrate=3270.8kbits/s dup=30 drop=0    
+frame=29814 fps=209 q=0.0 size=  495937kB time=00:20:42.77 bitrate=3269.1kbits/s dup=30 drop=0    
+frame=29928 fps=209 q=0.0 size=  497752kB time=00:20:47.90 bitrate=3267.6kbits/s dup=30 drop=0    
+frame=30040 fps=209 q=0.0 size=  499719kB time=00:20:52.18 bitrate=3269.3kbits/s dup=30 drop=0    
+frame=30172 fps=209 q=0.0 size=  501316kB time=00:20:57.62 bitrate=3265.5kbits/s dup=30 drop=0    
+frame=30298 fps=209 q=0.0 size=  502952kB time=00:21:03.09 bitrate=3262.0kbits/s dup=30 drop=0    
+frame=30422 fps=209 q=0.0 size=  504556kB time=00:21:08.22 bitrate=3259.1kbits/s dup=30 drop=0    
+frame=30549 fps=210 q=0.0 size=  506107kB time=00:21:13.41 bitrate=3255.8kbits/s dup=31 drop=0    
+frame=30672 fps=210 q=0.0 size=  507682kB time=00:21:18.45 bitrate=3253.1kbits/s dup=31 drop=0    
+frame=30782 fps=210 q=0.0 size=  509335kB time=00:21:23.13 bitrate=3251.8kbits/s dup=31 drop=0    
+frame=30893 fps=210 q=0.0 size=  510744kB time=00:21:27.92 bitrate=3248.6kbits/s dup=31 drop=0    
+frame=31007 fps=210 q=0.0 size=  511918kB time=00:21:32.71 bitrate=3244.1kbits/s dup=31 drop=0    
+frame=31122 fps=210 q=0.0 size=  513328kB time=00:21:37.64 bitrate=3240.6kbits/s dup=31 drop=0    
+frame=31247 fps=210 q=0.0 size=  514996kB time=00:21:42.43 bitrate=3239.2kbits/s dup=31 drop=0    
+frame=31350 fps=210 q=0.0 size=  516742kB time=00:21:46.95 bitrate=3238.9kbits/s dup=31 drop=0    
+frame=31450 fps=210 q=0.0 size=  519210kB time=00:21:50.87 bitrate=3244.7kbits/s dup=31 drop=0    
+frame=31552 fps=210 q=0.0 size=  521623kB time=00:21:55.23 bitrate=3248.9kbits/s dup=32 drop=0    
+frame=31660 fps=210 q=0.0 size=  523850kB time=00:21:59.83 bitrate=3251.5kbits/s dup=32 drop=0    
+frame=31766 fps=210 q=0.0 size=  524635kB time=00:22:04.11 bitrate=3245.8kbits/s dup=32 drop=0    
+frame=31866 fps=210 q=0.0 size=  525109kB time=00:22:08.20 bitrate=3238.7kbits/s dup=32 drop=0    
+frame=31958 fps=210 q=0.0 size=  525790kB time=00:22:12.03 bitrate=3233.6kbits/s dup=32 drop=0    
+frame=32035 fps=210 q=0.0 size=  526738kB time=00:22:15.19 bitrate=3231.8kbits/s dup=32 drop=0    
+frame=32124 fps=210 q=0.0 size=  527954kB time=00:22:19.05 bitrate=3229.9kbits/s dup=32 drop=0    
+frame=32249 fps=210 q=0.0 size=  529705kB time=00:22:24.32 bitrate=3227.9kbits/s dup=32 drop=0    
+frame=32379 fps=210 q=0.0 size=  531567kB time=00:22:29.70 bitrate=3226.3kbits/s dup=32 drop=0    
+frame=32511 fps=210 q=0.0 size=  532986kB time=00:22:35.68 bitrate=3220.7kbits/s dup=32 drop=0    
+frame=32656 fps=210 q=0.0 size=  534418kB time=00:22:41.14 bitrate=3216.4kbits/s dup=33 drop=0    
+fontconfig: Selected font is not the requested one: 'Tahoma Negreta' != 'Vesta'
+frame=32783 fps=210 q=0.0 size=  535722kB time=00:22:46.67 bitrate=3211.2kbits/s dup=33 drop=0    
+frame=32918 fps=211 q=0.0 size=  537773kB time=00:22:52.31 bitrate=3210.2kbits/s dup=33 drop=0    
+fontconfig: Selected font is not the requested one: 'Lucida Sans Typewriter fed oblik' != 'Vesta'
+frame=33052 fps=211 q=0.0 size=  539103kB time=00:22:57.69 bitrate=3205.6kbits/s dup=33 drop=0    
+frame=33175 fps=211 q=0.0 size=  540390kB time=00:23:03.16 bitrate=3200.5kbits/s dup=33 drop=0    
+frame=33299 fps=211 q=0.0 size=  541708kB time=00:23:07.84 bitrate=3197.5kbits/s dup=33 drop=0    
+frame=33423 fps=211 q=0.0 size=  543051kB time=00:23:13.14 bitrate=3193.3kbits/s dup=33 drop=0    
+frame=33566 fps=211 q=0.0 size=  544920kB time=00:23:19.11 bitrate=3190.6kbits/s dup=34 drop=0    
+frame=33687 fps=211 q=0.0 size=  547274kB time=00:23:24.49 bitrate=3192.1kbits/s dup=34 drop=0    
+frame=33812 fps=212 q=0.0 size=  549652kB time=00:23:29.35 bitrate=3194.9kbits/s dup=34 drop=0    
+frame=33945 fps=212 q=0.0 size=  551541kB time=00:23:35.40 bitrate=3192.2kbits/s dup=34 drop=0    
+frame=34064 fps=212 q=0.0 size=  553500kB time=00:23:40.02 bitrate=3193.1kbits/s dup=34 drop=0    
+frame=34195 fps=212 q=0.0 size=  555761kB time=00:23:45.30 bitrate=3194.3kbits/s dup=34 drop=0    
+frame=34325 fps=212 q=0.0 size=  558020kB time=00:23:50.68 bitrate=3195.2kbits/s dup=34 drop=0    
+frame=34463 fps=212 q=0.0 size=  560400kB time=00:23:56.83 bitrate=3195.1kbits/s dup=34 drop=0    
+frame=34592 fps=212 q=0.0 size=  562526kB time=00:24:02.21 bitrate=3195.2kbits/s dup=35 drop=0    
+frame=34731 fps=213 q=0.0 size=  564485kB time=00:24:07.59 bitrate=3194.4kbits/s dup=35 drop=0    
+frame=34850 fps=213 q=0.0 size=  565904kB time=00:24:12.78 bitrate=3191.0kbits/s dup=35 drop=0    
+frame=34992 fps=213 q=0.0 size=  567054kB time=00:24:17.99 bitrate=3186.1kbits/s dup=35 drop=0    
+frame=34992 fps=213 q=0.0 Lsize=  568691kB time=00:24:18.01 bitrate=3195.2kbits/s dup=35 drop=0    
+
+ -ss 0 -t 600 -y -threads 8 -i CURRENT.AVI -r 24 -vsync 1 -vcodec mjpeg -q 5 -acodec adpcm_ima_wav -async 1 -ac 2 "D:\DCIM\100NIN03\HNI_0101.AVI"
+
+ffmpeg version N-44459-g8bdba0b Copyright (c) 2000-2012 the FFmpeg developers
+  built on Sep 14 2012 18:39:46 with gcc 4.7.1 (GCC)
+  configuration: --enable-gpl --enable-version3 --disable-pthreads --enable-runtime-cpudetect --enable-avisynth --enable-bzlib --enable-frei0r --enable-libass --enable-libcelt --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libfreetype --enable-libgsm --enable-libmp3lame --enable-libnut --enable-libopenjpeg --enable-librtmp --enable-libschroedinger --enable-libspeex --enable-libtheora --enable-libutvideo --enable-libvo-aacenc --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libxavs --enable-libxvid --enable-zlib
+  libavutil      51. 73.100 / 51. 73.100
+  libavcodec     54. 55.100 / 54. 55.100
+  libavformat    54. 27.100 / 54. 27.100
+  libavdevice    54.  2.100 / 54.  2.100
+  libavfilter     3. 16.103 /  3. 16.103
+  libswscale      2.  1.101 /  2.  1.101
+  libswresample   0. 15.100 /  0. 15.100
+  libpostproc    52.  0.100 / 52.  0.100
+[avi @ 000000000019dd80] non-interleaved AVI
+Guessed Channel Layout for  Input Stream #0.1 : stereo
+Input #0, avi, from 'CURRENT.AVI':
+  Metadata:
+    title           : [Doki] Suzumiya Haruhi no Yuuutsu (2009) - 25 - The Adventures of Asahina Mikuru Episode 00 (1920x1080 h264 BD FLAC).mkv
+    encoder         : Lavf54.27.100
+  Duration: 00:24:18.00, start: 0.000000, bitrate: 3195 kb/s
+    Stream #0:0: Video: mjpeg (MJPG / 0x47504A4D), yuvj420p, 400x240 [SAR 1:1 DAR 5:3], 24 tbr, 24 tbn, 24 tbc
+    Metadata:
+      title           : AVC (1080p)
+    Stream #0:1: Audio: adpcm_ima_wav ([17][0][0][0] / 0x0011), 48000 Hz, stereo, s16, 384 kb/s
+    Metadata:
+      title           : FLAC (2 Ch)
+-t is not an input option, keeping it for the next output; consider fixing your command line.
+-async is forwarded to lavfi similarly to -af aresample=min_comp=0.001:min_hard_comp=0.100000.
+Output #0, avi, to 'D:\DCIM\100NIN03\HNI_0101.AVI':
+  Metadata:
+    INAM            : [Doki] Suzumiya Haruhi no Yuuutsu (2009) - 25 - The Adventures of Asahina Mikuru Episode 00 (1920x1080 h264 BD FLAC).mkv
+    ISFT            : Lavf54.27.100
+    Stream #0:0: Video: mjpeg (MJPG / 0x47504A4D), yuvj420p, 400x240 [SAR 1:1 DAR 5:3], q=2-31, 200 kb/s, 24 tbn, 24 tbc
+    Metadata:
+      title           : AVC (1080p)
+    Stream #0:1: Audio: adpcm_ima_wav ([17][0][0][0] / 0x0011), 48000 Hz, stereo, s16, 384 kb/s
+    Metadata:
+      title           : FLAC (2 Ch)
+Stream mapping:
+  Stream #0:0 -> #0:0 (mjpeg -> mjpeg)
+  Stream #0:1 -> #0:1 (adpcm_ima_wav -> adpcm_ima_wav)
+Press [q] to stop, [?] for help
+frame=   84 fps=0.0 q=0.0 size=     992kB time=00:00:03.49 bitrate=2324.7kbits/s    
+frame=  151 fps=150 q=0.0 size=    2456kB time=00:00:06.27 bitrate=3208.5kbits/s    
+frame=  209 fps=138 q=0.0 size=    3616kB time=00:00:08.70 bitrate=3402.0kbits/s    
+frame=  262 fps=129 q=0.0 size=    4528kB time=00:00:10.91 bitrate=3399.3kbits/s    
+frame=  321 fps=127 q=0.0 size=    5655kB time=00:00:13.36 bitrate=3465.2kbits/s    
+frame=  396 fps=130 q=0.0 size=    7016kB time=00:00:16.48 bitrate=3486.9kbits/s    
+frame=  480 fps=136 q=0.0 size=    8299kB time=00:00:19.97 bitrate=3402.9kbits/s    
+frame=  561 fps=139 q=0.0 size=    9531kB time=00:00:23.36 bitrate=3341.0kbits/s    
+frame=  637 fps=140 q=0.0 size=   11047kB time=00:00:26.52 bitrate=3411.5kbits/s    
+frame=  709 fps=140 q=0.0 size=   12530kB time=00:00:29.53 bitrate=3475.5kbits/s    
+frame=  775 fps=139 q=0.0 size=   13856kB time=00:00:32.28 bitrate=3515.4kbits/s    
+frame=  839 fps=139 q=0.0 size=   15225kB time=00:00:34.93 bitrate=3569.9kbits/s    
+frame=  910 fps=139 q=0.0 size=   16787kB time=00:00:37.90 bitrate=3628.1kbits/s    
+frame=  983 fps=139 q=0.0 size=   18233kB time=00:00:40.95 bitrate=3647.0kbits/s    
+frame= 1063 fps=141 q=0.0 size=   19652kB time=00:00:44.28 bitrate=3635.5kbits/s    
+frame= 1137 fps=141 q=0.0 size=   21108kB time=00:00:47.37 bitrate=3649.9kbits/s    
+frame= 1203 fps=140 q=0.0 size=   22416kB time=00:00:50.10 bitrate=3664.7kbits/s    
+frame= 1275 fps=141 q=0.0 size=   23882kB time=00:00:53.11 bitrate=3683.1kbits/s    
+frame= 1341 fps=140 q=0.0 size=   25194kB time=00:00:55.87 bitrate=3694.0kbits/s    
+frame= 1401 fps=139 q=0.0 size=   26286kB time=00:00:58.37 bitrate=3689.1kbits/s    
+frame= 1455 fps=137 q=0.0 size=   27265kB time=00:01:00.61 bitrate=3684.6kbits/s    
+frame= 1554 fps=140 q=0.0 size=   29088kB time=00:01:04.74 bitrate=3680.2kbits/s    
+frame= 1675 fps=145 q=0.0 size=   31653kB time=00:01:09.79 bitrate=3715.3kbits/s    
+frame= 1799 fps=149 q=0.0 size=   33779kB time=00:01:14.94 bitrate=3692.5kbits/s    
+frame= 1907 fps=151 q=0.0 size=   35305kB time=00:01:19.45 bitrate=3640.1kbits/s    
+frame= 1986 fps=152 q=0.0 size=   36511kB time=00:01:22.73 bitrate=3615.0kbits/s    
+frame= 2064 fps=152 q=0.0 size=   38020kB time=00:01:26.00 bitrate=3621.6kbits/s    
+frame= 2139 fps=152 q=0.0 size=   39469kB time=00:01:29.11 bitrate=3628.3kbits/s    
+frame= 2215 fps=152 q=0.0 size=   40856kB time=00:01:32.27 bitrate=3627.3kbits/s    
+frame= 2289 fps=151 q=0.0 size=   42281kB time=00:01:35.36 bitrate=3632.0kbits/s    
+frame= 2366 fps=151 q=0.0 size=   43779kB time=00:01:38.56 bitrate=3638.6kbits/s    
+frame= 2481 fps=154 q=0.0 size=   45618kB time=00:01:43.37 bitrate=3615.1kbits/s    
+frame= 2554 fps=154 q=0.0 size=   47088kB time=00:01:46.40 bitrate=3625.3kbits/s    
+frame= 2626 fps=153 q=0.0 size=   48540kB time=00:01:49.41 bitrate=3634.3kbits/s    
+frame= 2698 fps=153 q=0.0 size=   49947kB time=00:01:52.39 bitrate=3640.3kbits/s    
+frame= 2753 fps=152 q=0.0 size=   50985kB time=00:01:54.68 bitrate=3641.8kbits/s    
+frame= 2814 fps=151 q=0.0 size=   52102kB time=00:01:57.23 bitrate=3640.8kbits/s    
+frame= 2886 fps=151 q=0.0 size=   53428kB time=00:02:00.23 bitrate=3640.1kbits/s    
+frame= 2961 fps=151 q=0.0 size=   54863kB time=00:02:03.37 bitrate=3642.9kbits/s    
+frame= 3038 fps=151 q=0.0 size=   56214kB time=00:02:06.57 bitrate=3638.2kbits/s    
+frame= 3099 fps=150 q=0.0 size=   57321kB time=00:02:09.11 bitrate=3636.8kbits/s    
+frame= 3158 fps=149 q=0.0 size=   58400kB time=00:02:11.57 bitrate=3636.1kbits/s    
+frame= 3256 fps=150 q=0.0 size=   60160kB time=00:02:15.66 bitrate=3632.7kbits/s    
+frame= 3382 fps=153 q=0.0 size=   62473kB time=00:02:20.89 bitrate=3632.3kbits/s    
+frame= 3505 fps=155 q=0.0 size=   64969kB time=00:02:26.02 bitrate=3644.8kbits/s    
+frame= 3629 fps=157 q=0.0 size=   67530kB time=00:02:31.19 bitrate=3658.9kbits/s    
+frame= 3753 fps=159 q=0.0 size=   69516kB time=00:02:36.36 bitrate=3642.0kbits/s    
+frame= 3879 fps=161 q=0.0 size=   71561kB time=00:02:41.61 bitrate=3627.2kbits/s    
+frame= 4011 fps=163 q=0.0 size=   73981kB time=00:02:47.10 bitrate=3626.8kbits/s    
+frame= 4132 fps=164 q=0.0 size=   76192kB time=00:02:52.14 bitrate=3625.8kbits/s    
+frame= 4189 fps=163 q=0.0 size=   77263kB time=00:02:54.52 bitrate=3626.7kbits/s    
+frame= 4256 fps=163 q=0.0 size=   78488kB time=00:02:57.31 bitrate=3626.1kbits/s    
+frame= 4319 fps=162 q=0.0 size=   79651kB time=00:02:59.96 bitrate=3625.7kbits/s    
+frame= 4376 fps=161 q=0.0 size=   80627kB time=00:03:02.31 bitrate=3622.7kbits/s    
+frame= 4438 fps=160 q=0.0 size=   81553kB time=00:03:04.90 bitrate=3613.1kbits/s    
+frame= 4515 fps=160 q=0.0 size=   82731kB time=00:03:08.12 bitrate=3602.6kbits/s    
+frame= 4594 fps=160 q=0.0 size=   83955kB time=00:03:11.40 bitrate=3593.2kbits/s    
+frame= 4674 fps=160 q=0.0 size=   85134kB time=00:03:14.73 bitrate=3581.4kbits/s    
+frame= 4752 fps=160 q=0.0 size=   86315kB time=00:03:17.99 bitrate=3571.2kbits/s    
+frame= 4822 fps=159 q=0.0 size=   87418kB time=00:03:20.89 bitrate=3564.6kbits/s    
+frame= 4891 fps=159 q=0.0 size=   88453kB time=00:03:23.78 bitrate=3555.8kbits/s    
+frame= 4970 fps=159 q=0.0 size=   89614kB time=00:03:27.06 bitrate=3545.3kbits/s    
+frame= 5044 fps=159 q=0.0 size=   91031kB time=00:03:30.15 bitrate=3548.4kbits/s    
+frame= 5117 fps=159 q=0.0 size=   92468kB time=00:03:33.18 bitrate=3553.2kbits/s    
+frame= 5196 fps=159 q=0.0 size=   93904kB time=00:03:36.49 bitrate=3553.3kbits/s    
+frame= 5270 fps=158 q=0.0 size=   95247kB time=00:03:39.56 bitrate=3553.7kbits/s    
+frame= 5362 fps=159 q=0.0 size=   97042kB time=00:03:43.40 bitrate=3558.5kbits/s    
+frame= 5436 fps=159 q=0.0 size=   98450kB time=00:03:46.49 bitrate=3560.8kbits/s    
+frame= 5515 fps=159 q=0.0 size=   99852kB time=00:03:49.77 bitrate=3559.9kbits/s    
+frame= 5596 fps=159 q=0.0 size=  101121kB time=00:03:53.14 bitrate=3553.1kbits/s    
+frame= 5676 fps=159 q=0.0 size=  102292kB time=00:03:56.49 bitrate=3543.3kbits/s    
+frame= 5756 fps=159 q=0.0 size=  103462kB time=00:03:59.82 bitrate=3534.1kbits/s    
+frame= 5835 fps=159 q=0.0 size=  104617kB time=00:04:03.10 bitrate=3525.3kbits/s    
+frame= 5936 fps=159 q=0.0 size=  106012kB time=00:04:07.32 bitrate=3511.4kbits/s    
+frame= 6015 fps=159 q=0.0 size=  107080kB time=00:04:10.60 bitrate=3500.3kbits/s    
+frame= 6098 fps=159 q=0.0 size=  108197kB time=00:04:14.08 bitrate=3488.5kbits/s    
+frame= 6170 fps=159 q=0.0 size=  109349kB time=00:04:17.06 bitrate=3484.6kbits/s    
+frame= 6238 fps=159 q=0.0 size=  110629kB time=00:04:19.90 bitrate=3486.9kbits/s    
+frame= 6296 fps=158 q=0.0 size=  111843kB time=00:04:22.32 bitrate=3492.7kbits/s    
+frame= 6371 fps=158 q=0.0 size=  113206kB time=00:04:25.45 bitrate=3493.5kbits/s    
+frame= 6446 fps=158 q=0.0 size=  114572kB time=00:04:28.57 bitrate=3494.7kbits/s    
+frame= 6506 fps=157 q=0.0 size=  115641kB time=00:04:31.07 bitrate=3494.7kbits/s    
+frame= 6566 fps=157 q=0.0 size=  116570kB time=00:04:33.57 bitrate=3490.6kbits/s    
+frame= 6627 fps=156 q=0.0 size=  117586kB time=00:04:36.11 bitrate=3488.6kbits/s    
+frame= 6694 fps=156 q=0.0 size=  119082kB time=00:04:38.91 bitrate=3497.6kbits/s    
+frame= 6762 fps=156 q=0.0 size=  120682kB time=00:04:41.73 bitrate=3509.1kbits/s    
+frame= 6830 fps=156 q=0.0 size=  122323kB time=00:04:44.56 bitrate=3521.4kbits/s    
+frame= 6899 fps=155 q=0.0 size=  123907kB time=00:04:47.45 bitrate=3531.2kbits/s    
+frame= 6968 fps=155 q=0.0 size=  125464kB time=00:04:50.33 bitrate=3540.1kbits/s    
+frame= 7058 fps=155 q=0.0 size=  127475kB time=00:04:54.08 bitrate=3551.0kbits/s    
+frame= 7184 fps=156 q=0.0 size=  129758kB time=00:04:59.31 bitrate=3551.4kbits/s    
+frame= 7305 fps=157 q=0.0 size=  132288kB time=00:05:04.35 bitrate=3560.6kbits/s    
+frame= 7433 fps=158 q=0.0 size=  133977kB time=00:05:09.69 bitrate=3543.9kbits/s    
+frame= 7562 fps=159 q=0.0 size=  135673kB time=00:05:15.07 bitrate=3527.5kbits/s    
+frame= 7629 fps=159 q=0.0 size=  136745kB time=00:05:17.85 bitrate=3524.3kbits/s    
+frame= 7707 fps=159 q=0.0 size=  138056kB time=00:05:21.11 bitrate=3521.9kbits/s    
+frame= 7789 fps=159 q=0.0 size=  139225kB time=00:05:24.52 bitrate=3514.4kbits/s    
+frame= 7856 fps=159 q=0.0 size=  140289kB time=00:05:27.32 bitrate=3511.0kbits/s    
+frame= 7920 fps=159 q=0.0 size=  141274kB time=00:05:29.99 bitrate=3507.1kbits/s    
+frame= 7986 fps=158 q=0.0 size=  142038kB time=00:05:32.74 bitrate=3496.9kbits/s    
+frame= 8068 fps=158 q=0.0 size=  143049kB time=00:05:36.16 bitrate=3486.0kbits/s    
+frame= 8128 fps=158 q=0.0 size=  143909kB time=00:05:38.66 bitrate=3481.1kbits/s    
+frame= 8193 fps=158 q=0.0 size=  144784kB time=00:05:41.37 bitrate=3474.4kbits/s    
+frame= 8250 fps=157 q=0.0 size=  145546kB time=00:05:43.74 bitrate=3468.6kbits/s    
+frame= 8323 fps=157 q=0.0 size=  146568kB time=00:05:46.77 bitrate=3462.4kbits/s    
+frame= 8402 fps=157 q=0.0 size=  147627kB time=00:05:50.08 bitrate=3454.5kbits/s    
+frame= 8484 fps=157 q=0.0 size=  148755kB time=00:05:53.49 bitrate=3447.3kbits/s    
+frame= 8560 fps=157 q=0.0 size=  150038kB time=00:05:56.64 bitrate=3446.3kbits/s    
+frame= 8622 fps=157 q=0.0 size=  151099kB time=00:05:59.23 bitrate=3445.7kbits/s    
+frame= 8684 fps=157 q=0.0 size=  152167kB time=00:06:01.81 bitrate=3445.2kbits/s    
+frame= 8761 fps=157 q=0.0 size=  153440kB time=00:06:05.03 bitrate=3443.4kbits/s    
+frame= 8838 fps=156 q=0.0 size=  154633kB time=00:06:08.23 bitrate=3440.0kbits/s    
+frame= 8917 fps=156 q=0.0 size=  155931kB time=00:06:11.52 bitrate=3438.2kbits/s    
+frame= 8996 fps=156 q=0.0 size=  157272kB time=00:06:14.82 bitrate=3437.2kbits/s    
+frame= 9070 fps=156 q=0.0 size=  158621kB time=00:06:17.90 bitrate=3438.5kbits/s    
+frame= 9144 fps=156 q=0.0 size=  160002kB time=00:06:20.99 bitrate=3440.3kbits/s    
+frame= 9228 fps=156 q=0.0 size=  161527kB time=00:06:24.48 bitrate=3441.5kbits/s    
+frame= 9304 fps=156 q=0.0 size=  162834kB time=00:06:27.64 bitrate=3441.1kbits/s    
+frame= 9385 fps=156 q=0.0 size=  164009kB time=00:06:31.03 bitrate=3435.9kbits/s    
+frame= 9466 fps=156 q=0.0 size=  165050kB time=00:06:34.40 bitrate=3428.2kbits/s    
+frame= 9547 fps=157 q=0.0 size=  166231kB time=00:06:37.77 bitrate=3423.5kbits/s    
+frame= 9624 fps=156 q=0.0 size=  167456kB time=00:06:40.99 bitrate=3421.0kbits/s    
+frame= 9720 fps=157 q=0.0 size=  168748kB time=00:06:44.99 bitrate=3413.3kbits/s    
+frame= 9802 fps=157 q=0.0 size=  169696kB time=00:06:48.41 bitrate=3403.8kbits/s    
+frame= 9882 fps=157 q=0.0 size=  170886kB time=00:06:51.73 bitrate=3400.0kbits/s    
+frame= 9961 fps=157 q=0.0 size=  172117kB time=00:06:55.04 bitrate=3397.2kbits/s    
+frame=10045 fps=157 q=0.0 size=  173292kB time=00:06:58.53 bitrate=3391.8kbits/s    
+frame=10125 fps=157 q=0.0 size=  174296kB time=00:07:01.86 bitrate=3384.6kbits/s    
+frame=10203 fps=157 q=0.0 size=  175515kB time=00:07:05.10 bitrate=3382.3kbits/s    
+frame=10286 fps=157 q=0.0 size=  176562kB time=00:07:08.58 bitrate=3374.9kbits/s    
+frame=10370 fps=157 q=0.0 size=  177389kB time=00:07:12.07 bitrate=3363.2kbits/s    
+frame=10452 fps=157 q=0.0 size=  178220kB time=00:07:15.48 bitrate=3352.5kbits/s    
+frame=10535 fps=157 q=0.0 size=  179004kB time=00:07:18.94 bitrate=3340.8kbits/s    
+frame=10616 fps=157 q=0.0 size=  179941kB time=00:07:22.33 bitrate=3332.5kbits/s    
+frame=10703 fps=157 q=0.0 size=  181506kB time=00:07:25.95 bitrate=3334.2kbits/s    
+frame=10775 fps=157 q=0.0 size=  183029kB time=00:07:28.96 bitrate=3339.6kbits/s    
+frame=10837 fps=157 q=0.0 size=  184362kB time=00:07:31.52 bitrate=3344.9kbits/s    
+frame=10890 fps=156 q=0.0 size=  185492kB time=00:07:33.73 bitrate=3349.0kbits/s    
+frame=10946 fps=156 q=0.0 size=  186731kB time=00:07:36.08 bitrate=3354.0kbits/s    
+frame=11002 fps=156 q=0.0 size=  188008kB time=00:07:38.41 bitrate=3359.8kbits/s    
+frame=11071 fps=156 q=0.0 size=  189538kB time=00:07:41.27 bitrate=3366.1kbits/s    
+frame=11142 fps=156 q=0.0 size=  191092kB time=00:07:44.23 bitrate=3372.0kbits/s    
+frame=11212 fps=156 q=0.0 size=  192553kB time=00:07:47.16 bitrate=3376.5kbits/s    
+frame=11283 fps=155 q=0.0 size=  194070kB time=00:07:50.10 bitrate=3381.8kbits/s    
+frame=11337 fps=155 q=0.0 size=  195218kB time=00:07:52.37 bitrate=3385.5kbits/s    
+frame=11455 fps=156 q=0.0 size=  197541kB time=00:07:57.29 bitrate=3390.5kbits/s    
+frame=11581 fps=156 q=0.0 size=  199600kB time=00:08:02.52 bitrate=3388.7kbits/s    
+frame=11708 fps=157 q=0.0 size=  201673kB time=00:08:07.82 bitrate=3386.7kbits/s    
+frame=11833 fps=158 q=0.0 size=  203780kB time=00:08:13.03 bitrate=3385.9kbits/s    
+frame=11898 fps=157 q=0.0 size=  204913kB time=00:08:15.74 bitrate=3386.1kbits/s    
+frame=11982 fps=157 q=0.0 size=  205698kB time=00:08:19.24 bitrate=3375.3kbits/s    
+frame=12069 fps=158 q=0.0 size=  206539kB time=00:08:22.86 bitrate=3364.7kbits/s    
+frame=12138 fps=157 q=0.0 size=  207595kB time=00:08:25.74 bitrate=3362.6kbits/s    
+frame=12219 fps=157 q=0.0 size=  208811kB time=00:08:29.11 bitrate=3359.9kbits/s    
+frame=12298 fps=157 q=0.0 size=  209951kB time=00:08:32.39 bitrate=3356.6kbits/s    
+frame=12391 fps=158 q=0.0 size=  211348kB time=00:08:36.27 bitrate=3353.6kbits/s    
+frame=12470 fps=158 q=0.0 size=  212545kB time=00:08:39.58 bitrate=3351.1kbits/s    
+frame=12548 fps=158 q=0.0 size=  213687kB time=00:08:42.82 bitrate=3348.2kbits/s    
+frame=12627 fps=158 q=0.0 size=  214867kB time=00:08:46.10 bitrate=3345.7kbits/s    
+frame=12706 fps=158 q=0.0 size=  216106kB time=00:08:49.41 bitrate=3344.0kbits/s    
+frame=12785 fps=158 q=0.0 size=  217308kB time=00:08:52.69 bitrate=3341.8kbits/s    
+frame=12854 fps=157 q=0.0 size=  218426kB time=00:08:55.57 bitrate=3341.0kbits/s    
+frame=12924 fps=157 q=0.0 size=  219580kB time=00:08:58.48 bitrate=3340.5kbits/s    
+frame=12983 fps=157 q=0.0 size=  220544kB time=00:09:00.93 bitrate=3339.9kbits/s    
+frame=13047 fps=157 q=0.0 size=  221577kB time=00:09:03.60 bitrate=3339.1kbits/s    
+frame=13105 fps=157 q=0.0 size=  222346kB time=00:09:06.02 bitrate=3335.9kbits/s    
+frame=13179 fps=157 q=0.0 size=  223300kB time=00:09:09.11 bitrate=3331.3kbits/s    
+frame=13259 fps=157 q=0.0 size=  224519kB time=00:09:12.44 bitrate=3329.3kbits/s    
+frame=13335 fps=157 q=0.0 size=  225767kB time=00:09:15.62 bitrate=3328.7kbits/s    
+frame=13407 fps=156 q=0.0 size=  226997kB time=00:09:18.60 bitrate=3328.9kbits/s    
+frame=13476 fps=156 q=0.0 size=  228276kB time=00:09:21.48 bitrate=3330.5kbits/s    
+frame=13528 fps=156 q=0.0 size=  229258kB time=00:09:23.65 bitrate=3332.0kbits/s    
+frame=13603 fps=156 q=0.0 size=  230687kB time=00:09:26.78 bitrate=3334.2kbits/s    
+frame=13677 fps=156 q=0.0 size=  232092kB time=00:09:29.85 bitrate=3336.4kbits/s    
+frame=13751 fps=156 q=0.0 size=  233518kB time=00:09:32.95 bitrate=3338.8kbits/s    
+frame=13825 fps=156 q=0.0 size=  234881kB time=00:09:36.02 bitrate=3340.4kbits/s    
+frame=13904 fps=156 q=0.0 size=  236218kB time=00:09:39.32 bitrate=3340.2kbits/s    
+frame=13981 fps=156 q=0.0 size=  237582kB time=00:09:42.52 bitrate=3341.1kbits/s    
+frame=14096 fps=156 q=0.0 size=  239686kB time=00:09:47.31 bitrate=3343.2kbits/s    
+frame=14219 fps=157 q=0.0 size=  241916kB time=00:09:52.44 bitrate=3345.1kbits/s    
+frame=14344 fps=157 q=0.0 size=  244019kB time=00:09:57.65 bitrate=3344.7kbits/s    
+frame=14400 fps=157 q=0.0 Lsize=  245707kB time=00:10:00.00 bitrate=3354.7kbits/s    
+
+ -ss 600 -t 600 -y -threads 8 -i CURRENT.AVI -r 24 -vsync 1 -vcodec mjpeg -q 5 -acodec adpcm_ima_wav -async 1 -ac 2 "D:\DCIM\100NIN03\HNI_0102.AVI"
+
+ffmpeg version N-44459-g8bdba0b Copyright (c) 2000-2012 the FFmpeg developers
+  built on Sep 14 2012 18:39:46 with gcc 4.7.1 (GCC)
+  configuration: --enable-gpl --enable-version3 --disable-pthreads --enable-runtime-cpudetect --enable-avisynth --enable-bzlib --enable-frei0r --enable-libass --enable-libcelt --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libfreetype --enable-libgsm --enable-libmp3lame --enable-libnut --enable-libopenjpeg --enable-librtmp --enable-libschroedinger --enable-libspeex --enable-libtheora --enable-libutvideo --enable-libvo-aacenc --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libxavs --enable-libxvid --enable-zlib
+  libavutil      51. 73.100 / 51. 73.100
+  libavcodec     54. 55.100 / 54. 55.100
+  libavformat    54. 27.100 / 54. 27.100
+  libavdevice    54.  2.100 / 54.  2.100
+  libavfilter     3. 16.103 /  3. 16.103
+  libswscale      2.  1.101 /  2.  1.101
+  libswresample   0. 15.100 /  0. 15.100
+  libpostproc    52.  0.100 / 52.  0.100
+[avi @ 00000000029cdd80] non-interleaved AVI
+Guessed Channel Layout for  Input Stream #0.1 : stereo
+Input #0, avi, from 'CURRENT.AVI':
+  Metadata:
+    title           : [Doki] Suzumiya Haruhi no Yuuutsu (2009) - 25 - The Adventures of Asahina Mikuru Episode 00 (1920x1080 h264 BD FLAC).mkv
+    encoder         : Lavf54.27.100
+  Duration: 00:24:18.00, start: 0.000000, bitrate: 3195 kb/s
+    Stream #0:0: Video: mjpeg (MJPG / 0x47504A4D), yuvj420p, 400x240 [SAR 1:1 DAR 5:3], 24 tbr, 24 tbn, 24 tbc
+    Metadata:
+      title           : AVC (1080p)
+    Stream #0:1: Audio: adpcm_ima_wav ([17][0][0][0] / 0x0011), 48000 Hz, stereo, s16, 384 kb/s
+    Metadata:
+      title           : FLAC (2 Ch)
+-t is not an input option, keeping it for the next output; consider fixing your command line.
+-async is forwarded to lavfi similarly to -af aresample=min_comp=0.001:min_hard_comp=0.100000.
+Output #0, avi, to 'D:\DCIM\100NIN03\HNI_0102.AVI':
+  Metadata:
+    INAM            : [Doki] Suzumiya Haruhi no Yuuutsu (2009) - 25 - The Adventures of Asahina Mikuru Episode 00 (1920x1080 h264 BD FLAC).mkv
+    ISFT            : Lavf54.27.100
+    Stream #0:0: Video: mjpeg (MJPG / 0x47504A4D), yuvj420p, 400x240 [SAR 1:1 DAR 5:3], q=2-31, 200 kb/s, 24 tbn, 24 tbc
+    Metadata:
+      title           : AVC (1080p)
+    Stream #0:1: Audio: adpcm_ima_wav ([17][0][0][0] / 0x0011), 48000 Hz, stereo, s16, 384 kb/s
+    Metadata:
+      title           : FLAC (2 Ch)
+Stream mapping:
+  Stream #0:0 -> #0:0 (mjpeg -> mjpeg)
+  Stream #0:1 -> #0:1 (adpcm_ima_wav -> adpcm_ima_wav)
+Press [q] to stop, [?] for help
+frame=   70 fps=0.0 q=0.0 size=    1154kB time=00:00:02.90 bitrate=3255.9kbits/s    
+frame=  154 fps=153 q=0.0 size=    2013kB time=00:00:06.39 bitrate=2577.8kbits/s    
+frame=  225 fps=149 q=0.0 size=    3158kB time=00:00:09.36 bitrate=2762.1kbits/s    
+frame=  280 fps=140 q=0.0 size=    4100kB time=00:00:11.65 bitrate=2882.0kbits/s    
+frame=  342 fps=136 q=0.0 size=    5164kB time=00:00:14.23 bitrate=2971.2kbits/s    
+frame=  411 fps=137 q=0.0 size=    6362kB time=00:00:17.09 bitrate=3048.0kbits/s    
+frame=  487 fps=138 q=0.0 size=    7713kB time=00:00:20.27 bitrate=3116.2kbits/s    
+frame=  567 fps=141 q=0.0 size=    9088kB time=00:00:23.60 bitrate=3154.1kbits/s    
+frame=  643 fps=142 q=0.0 size=   10415kB time=00:00:26.78 bitrate=3185.9kbits/s    
+frame=  720 fps=143 q=0.0 size=   11627kB time=00:00:29.98 bitrate=3176.9kbits/s    
+frame=  788 fps=142 q=0.0 size=   12831kB time=00:00:32.81 bitrate=3202.8kbits/s    
+frame=  896 fps=148 q=0.0 size=   14668kB time=00:00:37.31 bitrate=3220.5kbits/s    
+frame= 1026 fps=156 q=0.0 size=   16463kB time=00:00:42.73 bitrate=3155.9kbits/s    
+frame= 1153 fps=163 q=0.0 size=   18013kB time=00:00:48.03 bitrate=3072.2kbits/s    
+frame= 1277 fps=169 q=0.0 size=   20379kB time=00:00:53.18 bitrate=3139.2kbits/s    
+frame= 1344 fps=167 q=0.0 size=   21652kB time=00:00:55.97 bitrate=3168.6kbits/s    
+frame= 1420 fps=166 q=0.0 size=   22971kB time=00:00:59.15 bitrate=3181.1kbits/s    
+frame= 1499 fps=165 q=0.0 size=   24365kB time=00:01:02.43 bitrate=3196.7kbits/s    
+frame= 1573 fps=164 q=0.0 size=   25816kB time=00:01:05.53 bitrate=3227.1kbits/s    
+frame= 1649 fps=164 q=0.0 size=   27248kB time=00:01:08.68 bitrate=3249.6kbits/s    
+frame= 1727 fps=163 q=0.0 size=   28618kB time=00:01:11.93 bitrate=3259.2kbits/s    
+frame= 1819 fps=164 q=0.0 size=   30238kB time=00:01:15.76 bitrate=3269.3kbits/s    
+frame= 1903 fps=164 q=0.0 size=   31726kB time=00:01:19.26 bitrate=3279.0kbits/s    
+frame= 1958 fps=162 q=0.0 size=   32690kB time=00:01:21.57 bitrate=3282.9kbits/s    
+frame= 2020 fps=160 q=0.0 size=   33669kB time=00:01:24.15 bitrate=3277.4kbits/s    
+frame= 2078 fps=159 q=0.0 size=   34463kB time=00:01:26.57 bitrate=3261.2kbits/s    
+frame= 2142 fps=158 q=0.0 size=   35347kB time=00:01:29.24 bitrate=3244.7kbits/s    
+frame= 2220 fps=157 q=0.0 size=   36690kB time=00:01:32.48 bitrate=3249.9kbits/s    
+frame= 2299 fps=157 q=0.0 size=   38090kB time=00:01:35.76 bitrate=3258.2kbits/s    
+frame= 2379 fps=157 q=0.0 size=   39402kB time=00:01:39.11 bitrate=3256.6kbits/s    
+frame= 2451 fps=157 q=0.0 size=   40507kB time=00:01:42.10 bitrate=3250.0kbits/s    
+frame= 2505 fps=155 q=0.0 size=   41375kB time=00:01:44.34 bitrate=3248.2kbits/s    
+frame= 2573 fps=155 q=0.0 size=   42457kB time=00:01:47.18 bitrate=3244.9kbits/s    
+frame= 2651 fps=155 q=0.0 size=   43837kB time=00:01:50.42 bitrate=3251.9kbits/s    
+frame= 2726 fps=155 q=0.0 size=   45200kB time=00:01:53.56 bitrate=3260.5kbits/s    
+frame= 2801 fps=155 q=0.0 size=   46548kB time=00:01:56.67 bitrate=3268.1kbits/s    
+frame= 2878 fps=155 q=0.0 size=   47984kB time=00:01:59.90 bitrate=3278.5kbits/s    
+frame= 2953 fps=154 q=0.0 size=   49361kB time=00:02:03.01 bitrate=3287.1kbits/s    
+frame= 3051 fps=155 q=0.0 size=   51215kB time=00:02:07.10 bitrate=3300.9kbits/s    
+frame= 3126 fps=155 q=0.0 size=   52613kB time=00:02:10.23 bitrate=3309.3kbits/s    
+frame= 3205 fps=155 q=0.0 size=   54032kB time=00:02:13.52 bitrate=3315.0kbits/s    
+frame= 3285 fps=155 q=0.0 size=   55281kB time=00:02:16.85 bitrate=3309.2kbits/s    
+frame= 3365 fps=155 q=0.0 size=   56321kB time=00:02:20.19 bitrate=3290.9kbits/s    
+frame= 3440 fps=155 q=0.0 size=   57811kB time=00:02:23.31 bitrate=3304.6kbits/s    
+frame= 3519 fps=155 q=0.0 size=   59483kB time=00:02:26.59 bitrate=3324.0kbits/s    
+frame= 3593 fps=155 q=0.0 size=   61104kB time=00:02:29.68 bitrate=3344.0kbits/s    
+frame= 3649 fps=154 q=0.0 size=   62297kB time=00:02:32.02 bitrate=3357.0kbits/s    
+frame= 3707 fps=153 q=0.0 size=   63552kB time=00:02:34.43 bitrate=3371.1kbits/s    
+frame= 3765 fps=153 q=0.0 size=   64319kB time=00:02:36.85 bitrate=3359.2kbits/s    
+frame= 3837 fps=152 q=0.0 size=   64937kB time=00:02:39.85 bitrate=3327.7kbits/s    
+frame= 3917 fps=153 q=0.0 size=   66109kB time=00:02:43.18 bitrate=3318.7kbits/s    
+frame= 3999 fps=153 q=0.0 size=   67221kB time=00:02:46.59 bitrate=3305.4kbits/s    
+frame= 4079 fps=153 q=0.0 size=   68273kB time=00:02:49.94 bitrate=3291.0kbits/s    
+frame= 4150 fps=152 q=0.0 size=   69231kB time=00:02:52.89 bitrate=3280.3kbits/s    
+frame= 4214 fps=152 q=0.0 size=   70119kB time=00:02:55.55 bitrate=3271.9kbits/s    
+frame= 4290 fps=152 q=0.0 size=   71142kB time=00:02:58.73 bitrate=3260.6kbits/s    
+frame= 4369 fps=152 q=0.0 size=   72291kB time=00:03:02.02 bitrate=3253.5kbits/s    
+frame= 4450 fps=152 q=0.0 size=   73439kB time=00:03:05.39 bitrate=3245.1kbits/s    
+frame= 4529 fps=152 q=0.0 size=   74537kB time=00:03:08.69 bitrate=3235.9kbits/s    
+frame= 4611 fps=152 q=0.0 size=   75539kB time=00:03:12.10 bitrate=3221.2kbits/s    
+frame= 4672 fps=152 q=0.0 size=   76504kB time=00:03:14.64 bitrate=3219.7kbits/s    
+frame= 4752 fps=152 q=0.0 size=   77886kB time=00:03:17.97 bitrate=3222.8kbits/s    
+frame= 4832 fps=152 q=0.0 size=   79196kB time=00:03:21.32 bitrate=3222.5kbits/s    
+frame= 4910 fps=152 q=0.0 size=   80478kB time=00:03:24.56 bitrate=3222.8kbits/s    
+frame= 4988 fps=152 q=0.0 size=   81702kB time=00:03:27.80 bitrate=3220.8kbits/s    
+frame= 5066 fps=152 q=0.0 size=   82859kB time=00:03:31.06 bitrate=3215.9kbits/s    
+frame= 5148 fps=152 q=0.0 size=   84060kB time=00:03:34.48 bitrate=3210.6kbits/s    
+frame= 5229 fps=153 q=0.0 size=   85105kB time=00:03:37.84 bitrate=3200.3kbits/s    
+frame= 5309 fps=153 q=0.0 size=   86187kB time=00:03:41.19 bitrate=3191.9kbits/s    
+frame= 5389 fps=153 q=0.0 size=   87349kB time=00:03:44.52 bitrate=3187.0kbits/s    
+frame= 5468 fps=153 q=0.0 size=   88517kB time=00:03:47.80 bitrate=3183.1kbits/s    
+frame= 5548 fps=153 q=0.0 size=   89546kB time=00:03:51.15 bitrate=3173.5kbits/s    
+frame= 5629 fps=153 q=0.0 size=   90696kB time=00:03:54.52 bitrate=3168.0kbits/s    
+frame= 5713 fps=153 q=0.0 size=   91772kB time=00:03:58.02 bitrate=3158.5kbits/s    
+frame= 5792 fps=153 q=0.0 size=   92845kB time=00:04:01.30 bitrate=3152.0kbits/s    
+frame= 5873 fps=153 q=0.0 size=   93981kB time=00:04:04.69 bitrate=3146.3kbits/s    
+frame= 5952 fps=153 q=0.0 size=   95049kB time=00:04:07.97 bitrate=3139.9kbits/s    
+frame= 6032 fps=153 q=0.0 size=   96089kB time=00:04:11.30 bitrate=3132.3kbits/s    
+frame= 6111 fps=153 q=0.0 size=   97190kB time=00:04:14.61 bitrate=3127.1kbits/s    
+frame= 6189 fps=153 q=0.0 size=   98284kB time=00:04:17.85 bitrate=3122.5kbits/s    
+frame= 6269 fps=153 q=0.0 size=   99373kB time=00:04:21.19 bitrate=3116.6kbits/s    
+frame= 6351 fps=154 q=0.0 size=  100526kB time=00:04:24.61 bitrate=3112.1kbits/s    
+frame= 6431 fps=154 q=0.0 size=  101678kB time=00:04:27.93 bitrate=3108.7kbits/s    
+frame= 6511 fps=154 q=0.0 size=  102814kB time=00:04:31.26 bitrate=3104.9kbits/s    
+frame= 6589 fps=154 q=0.0 size=  103910kB time=00:04:34.52 bitrate=3100.7kbits/s    
+frame= 6675 fps=154 q=0.0 size=  105008kB time=00:04:38.10 bitrate=3093.1kbits/s    
+frame= 6754 fps=154 q=0.0 size=  106011kB time=00:04:41.39 bitrate=3086.3kbits/s    
+frame= 6835 fps=154 q=0.0 size=  107142kB time=00:04:44.78 bitrate=3082.0kbits/s    
+frame= 6916 fps=154 q=0.0 size=  108227kB time=00:04:48.15 bitrate=3076.9kbits/s    
+frame= 6998 fps=154 q=0.0 size=  109325kB time=00:04:51.56 bitrate=3071.7kbits/s    
+frame= 7077 fps=154 q=0.0 size=  110345kB time=00:04:54.86 bitrate=3065.6kbits/s    
+frame= 7147 fps=154 q=0.0 size=  111340kB time=00:04:57.76 bitrate=3063.1kbits/s    
+frame= 7226 fps=154 q=0.0 size=  112428kB time=00:05:01.07 bitrate=3059.1kbits/s    
+frame= 7308 fps=154 q=0.0 size=  113580kB time=00:05:04.48 bitrate=3055.8kbits/s    
+frame= 7388 fps=154 q=0.0 size=  114751kB time=00:05:07.81 bitrate=3053.9kbits/s    
+frame= 7467 fps=154 q=0.0 size=  115951kB time=00:05:11.09 bitrate=3053.3kbits/s    
+frame= 7546 fps=154 q=0.0 size=  117105kB time=00:05:14.40 bitrate=3051.3kbits/s    
+frame= 7635 fps=155 q=0.0 size=  118417kB time=00:05:18.10 bitrate=3049.5kbits/s    
+frame= 7715 fps=155 q=0.0 size=  119497kB time=00:05:21.43 bitrate=3045.5kbits/s    
+frame= 7798 fps=155 q=0.0 size=  120688kB time=00:05:24.88 bitrate=3043.1kbits/s    
+frame= 7858 fps=154 q=0.0 size=  122000kB time=00:05:27.38 bitrate=3052.7kbits/s    
+frame= 7906 fps=154 q=0.0 size=  123168kB time=00:05:29.40 bitrate=3063.1kbits/s    
+frame= 7965 fps=153 q=0.0 size=  124625kB time=00:05:31.85 bitrate=3076.4kbits/s    
+frame= 8030 fps=153 q=0.0 size=  126250kB time=00:05:34.57 bitrate=3091.2kbits/s    
+frame= 8097 fps=153 q=0.0 size=  127892kB time=00:05:37.34 bitrate=3105.7kbits/s    
+frame= 8155 fps=153 q=0.0 size=  129319kB time=00:05:39.76 bitrate=3118.0kbits/s    
+frame= 8209 fps=152 q=0.0 size=  130631kB time=00:05:42.02 bitrate=3128.8kbits/s    
+frame= 8268 fps=152 q=0.0 size=  132104kB time=00:05:44.48 bitrate=3141.5kbits/s    
+frame= 8334 fps=152 q=0.0 size=  133721kB time=00:05:47.22 bitrate=3154.9kbits/s    
+frame= 8400 fps=151 q=0.0 size=  135418kB time=00:05:49.97 bitrate=3169.8kbits/s    
+frame= 8464 fps=151 q=0.0 size=  137064kB time=00:05:52.64 bitrate=3184.0kbits/s    
+frame= 8529 fps=151 q=0.0 size=  138708kB time=00:05:55.35 bitrate=3197.6kbits/s    
+frame= 8604 fps=151 q=0.0 size=  140488kB time=00:05:58.47 bitrate=3210.5kbits/s    
+frame= 8726 fps=152 q=0.0 size=  143342kB time=00:06:03.55 bitrate=3229.9kbits/s    
+frame= 8844 fps=153 q=0.0 size=  145886kB time=00:06:08.47 bitrate=3243.4kbits/s    
+frame= 8943 fps=153 q=0.0 size=  148283kB time=00:06:12.60 bitrate=3260.1kbits/s    
+frame= 9010 fps=153 q=0.0 size=  149925kB time=00:06:15.40 bitrate=3271.7kbits/s    
+frame= 9081 fps=153 q=0.0 size=  151606kB time=00:06:18.36 bitrate=3282.4kbits/s    
+frame= 9148 fps=153 q=0.0 size=  153063kB time=00:06:21.14 bitrate=3289.8kbits/s    
+frame= 9230 fps=153 q=0.0 size=  154339kB time=00:06:24.57 bitrate=3287.7kbits/s    
+frame= 9306 fps=153 q=0.0 size=  155735kB time=00:06:27.73 bitrate=3290.4kbits/s    
+frame= 9383 fps=153 q=0.0 size=  157122kB time=00:06:30.90 bitrate=3292.7kbits/s    
+frame= 9458 fps=153 q=0.0 size=  158450kB time=00:06:34.06 bitrate=3293.9kbits/s    
+frame= 9540 fps=153 q=0.0 size=  159801kB time=00:06:37.47 bitrate=3293.5kbits/s    
+frame= 9613 fps=153 q=0.0 size=  161248kB time=00:06:40.52 bitrate=3298.0kbits/s    
+frame= 9693 fps=153 q=0.0 size=  162559kB time=00:06:43.85 bitrate=3297.4kbits/s    
+frame= 9770 fps=153 q=0.0 size=  163664kB time=00:06:47.05 bitrate=3293.7kbits/s    
+frame= 9875 fps=153 q=0.0 size=  165112kB time=00:06:51.44 bitrate=3287.5kbits/s    
+frame= 9955 fps=153 q=0.0 size=  166144kB time=00:06:54.76 bitrate=3281.5kbits/s    
+frame=10033 fps=153 q=0.0 size=  167517kB time=00:06:58.02 bitrate=3282.8kbits/s    
+frame=10113 fps=153 q=0.0 size=  168592kB time=00:07:01.35 bitrate=3277.8kbits/s    
+frame=10193 fps=153 q=0.0 size=  169634kB time=00:07:04.68 bitrate=3272.2kbits/s    
+frame=10271 fps=153 q=0.0 size=  170807kB time=00:07:07.94 bitrate=3269.7kbits/s    
+frame=10348 fps=153 q=0.0 size=  172023kB time=00:07:11.14 bitrate=3268.5kbits/s    
+frame=10445 fps=154 q=0.0 size=  173445kB time=00:07:15.19 bitrate=3264.9kbits/s    
+frame=10522 fps=154 q=0.0 size=  174696kB time=00:07:18.39 bitrate=3264.5kbits/s    
+frame=10604 fps=154 q=0.0 size=  175912kB time=00:07:21.82 bitrate=3261.6kbits/s    
+frame=10680 fps=154 q=0.0 size=  177062kB time=00:07:24.97 bitrate=3259.7kbits/s    
+frame=10760 fps=154 q=0.0 size=  178409kB time=00:07:28.30 bitrate=3260.1kbits/s    
+frame=10835 fps=154 q=0.0 size=  179732kB time=00:07:31.44 bitrate=3261.5kbits/s    
+frame=10926 fps=154 q=0.0 size=  181291kB time=00:07:35.23 bitrate=3262.4kbits/s    
+frame=10992 fps=154 q=0.0 size=  182340kB time=00:07:37.98 bitrate=3261.5kbits/s    
+frame=11050 fps=153 q=0.0 size=  183443kB time=00:07:40.40 bitrate=3264.0kbits/s    
+frame=11108 fps=153 q=0.0 size=  184604kB time=00:07:42.81 bitrate=3267.5kbits/s    
+frame=11164 fps=153 q=0.0 size=  185746kB time=00:07:45.15 bitrate=3271.3kbits/s    
+frame=11233 fps=153 q=0.0 size=  186966kB time=00:07:48.03 bitrate=3272.5kbits/s    
+frame=11312 fps=153 q=0.0 size=  188279kB time=00:07:51.31 bitrate=3272.5kbits/s    
+frame=11388 fps=153 q=0.0 size=  189642kB time=00:07:54.47 bitrate=3274.3kbits/s    
+frame=11456 fps=152 q=0.0 size=  191164kB time=00:07:57.31 bitrate=3280.9kbits/s    
+frame=11532 fps=152 q=0.0 size=  192613kB time=00:08:00.49 bitrate=3283.9kbits/s    
+frame=11586 fps=152 q=0.0 size=  193510kB time=00:08:02.73 bitrate=3283.9kbits/s    
+frame=11665 fps=152 q=0.0 size=  194801kB time=00:08:06.02 bitrate=3283.4kbits/s    
+frame=11744 fps=152 q=0.0 size=  196086kB time=00:08:09.30 bitrate=3282.9kbits/s    
+frame=11825 fps=152 q=0.0 size=  197256kB time=00:08:12.69 bitrate=3279.8kbits/s    
+frame=11904 fps=152 q=0.0 size=  198474kB time=00:08:15.97 bitrate=3278.2kbits/s    
+frame=11983 fps=152 q=0.0 size=  199847kB time=00:08:19.28 bitrate=3279.0kbits/s    
+frame=12060 fps=152 q=0.0 size=  201041kB time=00:08:22.48 bitrate=3277.6kbits/s    
+frame=12138 fps=152 q=0.0 size=  202237kB time=00:08:25.72 bitrate=3275.9kbits/s    
+frame=12216 fps=152 q=0.0 size=  203536kB time=00:08:28.98 bitrate=3275.8kbits/s    
+frame=12298 fps=152 q=0.0 size=  204743kB time=00:08:32.39 bitrate=3273.3kbits/s    
+frame=12376 fps=153 q=0.0 size=  205958kB time=00:08:35.64 bitrate=3272.1kbits/s    
+frame=12456 fps=153 q=0.0 size=  207122kB time=00:08:38.98 bitrate=3269.3kbits/s    
+frame=12533 fps=153 q=0.0 size=  208249kB time=00:08:42.18 bitrate=3267.0kbits/s    
+frame=12625 fps=153 q=0.0 size=  209675kB time=00:08:46.02 bitrate=3265.4kbits/s    
+frame=12706 fps=153 q=0.0 size=  210927kB time=00:08:49.39 bitrate=3264.0kbits/s    
+frame=12784 fps=153 q=0.0 size=  212170kB time=00:08:52.65 bitrate=3263.1kbits/s    
+frame=12862 fps=153 q=0.0 size=  213522kB time=00:08:55.89 bitrate=3264.0kbits/s    
+frame=12927 fps=153 q=0.0 size=  214700kB time=00:08:58.60 bitrate=3265.5kbits/s    
+frame=12982 fps=152 q=0.0 size=  215696kB time=00:09:00.89 bitrate=3266.8kbits/s    
+frame=13059 fps=152 q=0.0 size=  217059kB time=00:09:04.11 bitrate=3268.0kbits/s    
+frame=13134 fps=152 q=0.0 size=  218202kB time=00:09:07.23 bitrate=3266.5kbits/s    
+frame=13206 fps=152 q=0.0 size=  218999kB time=00:09:10.23 bitrate=3260.5kbits/s    
+frame=13265 fps=152 q=0.0 size=  219811kB time=00:09:12.69 bitrate=3258.0kbits/s    
+frame=13327 fps=152 q=0.0 size=  220783kB time=00:09:15.28 bitrate=3257.2kbits/s    
+frame=13401 fps=152 q=0.0 size=  221683kB time=00:09:18.35 bitrate=3252.5kbits/s    
+frame=13483 fps=152 q=0.0 size=  222666kB time=00:09:21.76 bitrate=3247.0kbits/s    
+frame=13563 fps=152 q=0.0 size=  223525kB time=00:09:25.11 bitrate=3240.3kbits/s    
+frame=13643 fps=152 q=0.0 size=  224791kB time=00:09:28.43 bitrate=3239.6kbits/s    
+frame=13709 fps=152 q=0.0 size=  225972kB time=00:09:31.19 bitrate=3240.9kbits/s    
+frame=13771 fps=152 q=0.0 size=  227075kB time=00:09:33.77 bitrate=3242.0kbits/s    
+frame=13851 fps=152 q=0.0 size=  228300kB time=00:09:37.10 bitrate=3240.7kbits/s    
+frame=13933 fps=152 q=0.0 size=  229392kB time=00:09:40.53 bitrate=3237.0kbits/s    
+frame=14012 fps=152 q=0.0 size=  230336kB time=00:09:43.82 bitrate=3232.0kbits/s    
+frame=14095 fps=152 q=0.0 size=  231482kB time=00:09:47.27 bitrate=3229.0kbits/s    
+frame=14169 fps=152 q=0.0 size=  232720kB time=00:09:50.34 bitrate=3229.4kbits/s    
+frame=14243 fps=152 q=0.0 size=  233943kB time=00:09:53.44 bitrate=3229.4kbits/s    
+frame=14322 fps=152 q=0.0 size=  235046kB time=00:09:56.72 bitrate=3226.8kbits/s    
+frame=14400 fps=152 q=0.0 Lsize=  236722kB time=00:10:00.00 bitrate=3232.0kbits/s    
+
+ -ss 1200 -t 600 -y -threads 8 -i CURRENT.AVI -r 24 -vsync 1 -vcodec mjpeg -q 5 -acodec adpcm_ima_wav -async 1 -ac 2 "D:\DCIM\100NIN03\HNI_0103.AVI"
+
+ffmpeg version N-44459-g8bdba0b Copyright (c) 2000-2012 the FFmpeg developers
+  built on Sep 14 2012 18:39:46 with gcc 4.7.1 (GCC)
+  configuration: --enable-gpl --enable-version3 --disable-pthreads --enable-runtime-cpudetect --enable-avisynth --enable-bzlib --enable-frei0r --enable-libass --enable-libcelt --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libfreetype --enable-libgsm --enable-libmp3lame --enable-libnut --enable-libopenjpeg --enable-librtmp --enable-libschroedinger --enable-libspeex --enable-libtheora --enable-libutvideo --enable-libvo-aacenc --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libxavs --enable-libxvid --enable-zlib
+  libavutil      51. 73.100 / 51. 73.100
+  libavcodec     54. 55.100 / 54. 55.100
+  libavformat    54. 27.100 / 54. 27.100
+  libavdevice    54.  2.100 / 54.  2.100
+  libavfilter     3. 16.103 /  3. 16.103
+  libswscale      2.  1.101 /  2.  1.101
+  libswresample   0. 15.100 /  0. 15.100
+  libpostproc    52.  0.100 / 52.  0.100
+[avi @ 00000000027edd80] non-interleaved AVI
+Guessed Channel Layout for  Input Stream #0.1 : stereo
+Input #0, avi, from 'CURRENT.AVI':
+  Metadata:
+    title           : [Doki] Suzumiya Haruhi no Yuuutsu (2009) - 25 - The Adventures of Asahina Mikuru Episode 00 (1920x1080 h264 BD FLAC).mkv
+    encoder         : Lavf54.27.100
+  Duration: 00:24:18.00, start: 0.000000, bitrate: 3195 kb/s
+    Stream #0:0: Video: mjpeg (MJPG / 0x47504A4D), yuvj420p, 400x240 [SAR 1:1 DAR 5:3], 24 tbr, 24 tbn, 24 tbc
+    Metadata:
+      title           : AVC (1080p)
+    Stream #0:1: Audio: adpcm_ima_wav ([17][0][0][0] / 0x0011), 48000 Hz, stereo, s16, 384 kb/s
+    Metadata:
+      title           : FLAC (2 Ch)
+-t is not an input option, keeping it for the next output; consider fixing your command line.
+-async is forwarded to lavfi similarly to -af aresample=min_comp=0.001:min_hard_comp=0.100000.
+Output #0, avi, to 'D:\DCIM\100NIN03\HNI_0103.AVI':
+  Metadata:
+    INAM            : [Doki] Suzumiya Haruhi no Yuuutsu (2009) - 25 - The Adventures of Asahina Mikuru Episode 00 (1920x1080 h264 BD FLAC).mkv
+    ISFT            : Lavf54.27.100
+    Stream #0:0: Video: mjpeg (MJPG / 0x47504A4D), yuvj420p, 400x240 [SAR 1:1 DAR 5:3], q=2-31, 200 kb/s, 24 tbn, 24 tbc
+    Metadata:
+      title           : AVC (1080p)
+    Stream #0:1: Audio: adpcm_ima_wav ([17][0][0][0] / 0x0011), 48000 Hz, stereo, s16, 384 kb/s
+    Metadata:
+      title           : FLAC (2 Ch)
+Stream mapping:
+  Stream #0:0 -> #0:0 (mjpeg -> mjpeg)
+  Stream #0:1 -> #0:1 (adpcm_ima_wav -> adpcm_ima_wav)
+Press [q] to stop, [?] for help
+frame=   80 fps=0.0 q=0.0 size=    1165kB time=00:00:03.32 bitrate=2868.5kbits/s    
+frame=  161 fps=160 q=0.0 size=    2414kB time=00:00:06.69 bitrate=2953.6kbits/s    
+frame=  238 fps=158 q=0.0 size=    3592kB time=00:00:09.91 bitrate=2967.9kbits/s    
+frame=  337 fps=167 q=0.0 size=    4954kB time=00:00:14.02 bitrate=2893.5kbits/s    
+frame=  415 fps=165 q=0.0 size=    6132kB time=00:00:17.28 bitrate=2905.4kbits/s    
+frame=  496 fps=164 q=0.0 size=    7197kB time=00:00:20.65 bitrate=2854.1kbits/s    
+frame=  573 fps=163 q=0.0 size=    8440kB time=00:00:23.87 bitrate=2895.5kbits/s    
+frame=  652 fps=162 q=0.0 size=    9785kB time=00:00:27.16 bitrate=2951.1kbits/s    
+frame=  729 fps=161 q=0.0 size=   11072kB time=00:00:30.36 bitrate=2987.4kbits/s    
+frame=  824 fps=164 q=0.0 size=   12372kB time=00:00:34.32 bitrate=2952.8kbits/s    
+frame=  907 fps=164 q=0.0 size=   13344kB time=00:00:37.77 bitrate=2893.7kbits/s    
+frame=  987 fps=163 q=0.0 size=   14466kB time=00:00:41.12 bitrate=2881.7kbits/s    
+frame= 1067 fps=163 q=0.0 size=   15677kB time=00:00:44.45 bitrate=2889.2kbits/s    
+frame= 1146 fps=163 q=0.0 size=   16981kB time=00:00:47.73 bitrate=2914.1kbits/s    
+frame= 1223 fps=162 q=0.0 size=   18341kB time=00:00:50.95 bitrate=2948.6kbits/s    
+frame= 1303 fps=162 q=0.0 size=   19422kB time=00:00:54.28 bitrate=2931.0kbits/s    
+frame= 1397 fps=163 q=0.0 size=   20580kB time=00:00:58.20 bitrate=2896.6kbits/s    
+frame= 1478 fps=163 q=0.0 size=   21607kB time=00:01:01.57 bitrate=2874.8kbits/s    
+frame= 1562 fps=163 q=0.0 size=   22678kB time=00:01:05.06 bitrate=2855.2kbits/s    
+frame= 1643 fps=163 q=0.0 size=   23703kB time=00:01:08.45 bitrate=2836.5kbits/s    
+frame= 1727 fps=163 q=0.0 size=   24749kB time=00:01:11.95 bitrate=2817.7kbits/s    
+frame= 1807 fps=163 q=0.0 size=   25693kB time=00:01:15.27 bitrate=2796.0kbits/s    
+frame= 1870 fps=162 q=0.0 size=   26552kB time=00:01:17.90 bitrate=2792.0kbits/s    
+frame= 1934 fps=160 q=0.0 size=   27512kB time=00:01:20.57 bitrate=2797.1kbits/s    
+frame= 1998 fps=158 q=0.0 size=   28471kB time=00:01:23.24 bitrate=2801.8kbits/s    
+frame= 2060 fps=157 q=0.0 size=   29216kB time=00:01:25.83 bitrate=2788.4kbits/s    
+frame= 2126 fps=156 q=0.0 size=   30128kB time=00:01:28.58 bitrate=2786.2kbits/s    
+frame= 2209 fps=156 q=0.0 size=   30832kB time=00:01:32.03 bitrate=2744.2kbits/s    
+frame= 2294 fps=157 q=0.0 size=   31787kB time=00:01:35.57 bitrate=2724.5kbits/s    
+frame= 2357 fps=156 q=0.0 size=   32799kB time=00:01:38.20 bitrate=2736.0kbits/s    
+frame= 2422 fps=155 q=0.0 size=   33718kB time=00:01:40.91 bitrate=2737.1kbits/s    
+frame= 2489 fps=154 q=0.0 size=   34426kB time=00:01:43.69 bitrate=2719.7kbits/s    
+frame= 2559 fps=154 q=0.0 size=   35860kB time=00:01:46.61 bitrate=2755.4kbits/s    
+frame= 2622 fps=153 q=0.0 size=   37416kB time=00:01:49.24 bitrate=2805.8kbits/s    
+frame= 2687 fps=152 q=0.0 size=   39019kB time=00:01:51.95 bitrate=2855.1kbits/s    
+frame= 2754 fps=152 q=0.0 size=   40565kB time=00:01:54.77 bitrate=2895.3kbits/s    
+frame= 2817 fps=151 q=0.0 size=   41887kB time=00:01:57.37 bitrate=2923.3kbits/s    
+frame= 2907 fps=152 q=0.0 size=   43235kB time=00:02:01.12 bitrate=2924.0kbits/s    
+frame= 3008 fps=153 q=0.0 size=   43733kB time=00:02:05.32 bitrate=2858.7kbits/s    
+frame= 3106 fps=154 q=0.0 size=   44239kB time=00:02:09.41 bitrate=2800.4kbits/s    
+frame= 3192 fps=154 q=0.0 size=   45077kB time=00:02:12.99 bitrate=2776.6kbits/s    
+frame= 3271 fps=154 q=0.0 size=   46168kB time=00:02:16.27 bitrate=2775.3kbits/s    
+frame= 3353 fps=155 q=0.0 size=   47202kB time=00:02:19.71 bitrate=2767.7kbits/s    
+frame= 3421 fps=154 q=0.0 size=   48152kB time=00:02:22.52 bitrate=2767.6kbits/s    
+frame= 3491 fps=154 q=0.0 size=   49291kB time=00:02:25.45 bitrate=2776.1kbits/s    
+frame= 3571 fps=154 q=0.0 size=   50372kB time=00:02:28.77 bitrate=2773.6kbits/s    
+frame= 3657 fps=154 q=0.0 size=   51319kB time=00:02:32.35 bitrate=2759.3kbits/s    
+frame= 3740 fps=155 q=0.0 size=   52179kB time=00:02:35.83 bitrate=2743.0kbits/s    
+frame= 3825 fps=155 q=0.0 size=   53017kB time=00:02:39.37 bitrate=2725.2kbits/s    
+frame= 3899 fps=155 q=0.0 size=   53703kB time=00:02:42.44 bitrate=2708.2kbits/s    
+frame= 3981 fps=155 q=0.0 size=   54594kB time=00:02:45.87 bitrate=2696.2kbits/s    
+frame= 4062 fps=155 q=0.0 size=   55828kB time=00:02:49.24 bitrate=2702.2kbits/s    
+frame= 4142 fps=155 q=0.0 size=   56956kB time=00:02:52.57 bitrate=2703.7kbits/s    
+frame= 4226 fps=155 q=0.0 size=   57774kB time=00:02:56.06 bitrate=2688.1kbits/s    
+frame= 4314 fps=156 q=0.0 size=   58661kB time=00:02:59.73 bitrate=2673.7kbits/s    
+frame= 4391 fps=156 q=0.0 size=   59444kB time=00:03:02.95 bitrate=2661.7kbits/s    
+frame= 4473 fps=156 q=0.0 size=   60279kB time=00:03:06.36 bitrate=2649.7kbits/s    
+frame= 4556 fps=156 q=0.0 size=   61321kB time=00:03:09.81 bitrate=2646.4kbits/s    
+frame= 4641 fps=156 q=0.0 size=   62138kB time=00:03:13.37 bitrate=2632.3kbits/s    
+frame= 4722 fps=156 q=0.0 size=   63157kB time=00:03:16.74 bitrate=2629.7kbits/s    
+frame= 4800 fps=156 q=0.0 size=   64415kB time=00:03:19.98 bitrate=2638.6kbits/s    
+frame= 4878 fps=156 q=0.0 size=   65987kB time=00:03:23.25 bitrate=2659.6kbits/s    
+frame= 4954 fps=156 q=0.0 size=   67517kB time=00:03:26.40 bitrate=2679.7kbits/s    
+frame= 5030 fps=156 q=0.0 size=   68795kB time=00:03:29.58 bitrate=2689.0kbits/s    
+frame= 5109 fps=156 q=0.0 size=   69882kB time=00:03:32.87 bitrate=2689.3kbits/s    
+frame= 5188 fps=156 q=0.0 size=   71106kB time=00:03:36.15 bitrate=2694.8kbits/s    
+frame= 5265 fps=156 q=0.0 size=   72415kB time=00:03:39.37 bitrate=2704.2kbits/s    
+frame= 5341 fps=156 q=0.0 size=   73783kB time=00:03:42.53 bitrate=2716.1kbits/s    
+frame= 5439 fps=156 q=0.0 size=   75393kB time=00:03:46.62 bitrate=2725.3kbits/s    
+frame= 5493 fps=156 q=0.0 size=   76374kB time=00:03:48.86 bitrate=2733.7kbits/s    
+frame= 5558 fps=155 q=0.0 size=   77465kB time=00:03:51.57 bitrate=2740.3kbits/s    
+frame= 5615 fps=155 q=0.0 size=   78467kB time=00:03:53.95 bitrate=2747.6kbits/s    
+frame= 5677 fps=154 q=0.0 size=   79520kB time=00:03:56.53 bitrate=2754.0kbits/s    
+frame= 5752 fps=154 q=0.0 size=   80780kB time=00:03:59.65 bitrate=2761.3kbits/s    
+frame= 5832 fps=154 q=0.0 size=   82042kB time=00:04:02.99 bitrate=2765.8kbits/s    
+frame= 5915 fps=154 q=0.0 size=   83177kB time=00:04:06.45 bitrate=2764.8kbits/s    
+frame= 5989 fps=154 q=0.0 size=   84071kB time=00:04:09.52 bitrate=2760.1kbits/s    
+frame= 6056 fps=154 q=0.0 size=   84847kB time=00:04:12.32 bitrate=2754.7kbits/s    
+frame= 6124 fps=154 q=0.0 size=   85523kB time=00:04:15.16 bitrate=2745.7kbits/s    
+frame= 6192 fps=154 q=0.0 Lsize=   86240kB time=00:04:18.02 bitrate=2738.1kbits/s    
+
+ -ss 1800 -t 600 -y -threads 8 -i CURRENT.AVI -r 24 -vsync 1 -vcodec mjpeg -q 5 -acodec adpcm_ima_wav -async 1 -ac 2 "D:\DCIM\100NIN03\HNI_0104.AVI"
+
+ffmpeg version N-44459-g8bdba0b Copyright (c) 2000-2012 the FFmpeg developers
+  built on Sep 14 2012 18:39:46 with gcc 4.7.1 (GCC)
+  configuration: --enable-gpl --enable-version3 --disable-pthreads --enable-runtime-cpudetect --enable-avisynth --enable-bzlib --enable-frei0r --enable-libass --enable-libcelt --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libfreetype --enable-libgsm --enable-libmp3lame --enable-libnut --enable-libopenjpeg --enable-librtmp --enable-libschroedinger --enable-libspeex --enable-libtheora --enable-libutvideo --enable-libvo-aacenc --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libxavs --enable-libxvid --enable-zlib
+  libavutil      51. 73.100 / 51. 73.100
+  libavcodec     54. 55.100 / 54. 55.100
+  libavformat    54. 27.100 / 54. 27.100
+  libavdevice    54.  2.100 / 54.  2.100
+  libavfilter     3. 16.103 /  3. 16.103
+  libswscale      2.  1.101 /  2.  1.101
+  libswresample   0. 15.100 /  0. 15.100
+  libpostproc    52.  0.100 / 52.  0.100
+[avi @ 000000000213dd80] non-interleaved AVI
+Guessed Channel Layout for  Input Stream #0.1 : stereo
+Input #0, avi, from 'CURRENT.AVI':
+  Metadata:
+    title           : [Doki] Suzumiya Haruhi no Yuuutsu (2009) - 25 - The Adventures of Asahina Mikuru Episode 00 (1920x1080 h264 BD FLAC).mkv
+    encoder         : Lavf54.27.100
+  Duration: 00:24:18.00, start: 0.000000, bitrate: 3195 kb/s
+    Stream #0:0: Video: mjpeg (MJPG / 0x47504A4D), yuvj420p, 400x240 [SAR 1:1 DAR 5:3], 24 tbr, 24 tbn, 24 tbc
+    Metadata:
+      title           : AVC (1080p)
+    Stream #0:1: Audio: adpcm_ima_wav ([17][0][0][0] / 0x0011), 48000 Hz, stereo, s16, 384 kb/s
+    Metadata:
+      title           : FLAC (2 Ch)
+-t is not an input option, keeping it for the next output; consider fixing your command line.
+-async is forwarded to lavfi similarly to -af aresample=min_comp=0.001:min_hard_comp=0.100000.
+Output #0, avi, to 'D:\DCIM\100NIN03\HNI_0104.AVI':
+  Metadata:
+    INAM            : [Doki] Suzumiya Haruhi no Yuuutsu (2009) - 25 - The Adventures of Asahina Mikuru Episode 00 (1920x1080 h264 BD FLAC).mkv
+    ISFT            : Lavf54.27.100
+    Stream #0:0: Video: mjpeg (MJPG / 0x47504A4D), yuvj420p, 400x240 [SAR 1:1 DAR 5:3], q=2-31, 200 kb/s, 24 tbn, 24 tbc
+    Metadata:
+      title           : AVC (1080p)
+    Stream #0:1: Audio: adpcm_ima_wav ([17][0][0][0] / 0x0011), 48000 Hz, stereo, s16, 384 kb/s
+    Metadata:
+      title     
